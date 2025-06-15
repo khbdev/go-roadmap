@@ -1,8 +1,7 @@
 
-
 ---
 
-# 🚀 Sentabrgacha Go Backend Dasturchi Bo'lish Yo'l xaritasi
+# 🚀 Yangilangan: Sentabrgacha Go Backend Dasturchi Bo'lish Yo'l Xaritasi (MySQL bilan)
 
 ## 🎯 Maqsad: Ishga tayyor **Junior Go Backend Dasturchi**
 
@@ -12,38 +11,31 @@
 
 | Davr             | Yo‘nalish                        | Amaliy Ko‘nikmalar                                                     |
 | ---------------- | -------------------------------- | ---------------------------------------------------------------------- |
-| **Iyun 15–30**   | Go asoslari + CLI dasturlar      | Go sintaksisi, concurrency (bir vaqtning o‘zida bajarish), test yozish |
-| **Iyul**         | Web backend + ma’lumotlar bazasi | REST API, PostgreSQL, autentifikatsiya                                 |
-| **Avgust 1–15**  | Ishlab chiqarishga tayyor        | Docker, deployment, portfolioni to‘plash                               |
-| **Avgust 15–30** | Ishga tayyor                     | Intervyu tayyorgarligi, real loyihalar                                 |
+| **Iyun 15–30**   | Go asoslari + CLI dasturlar      | Go sintaksisi, concurrency, test yozish                               |
+| **Iyul**         | Web backend + ma’lumotlar bazasi | REST API, **MySQL**, autentifikatsiya                                 |
+| **Avgust 1–15**  | Ishlab chiqarishga tayyor        | Docker, deployment, portfolio to‘plash                                |
+| **Avgust 16–30** | Ishga tayyor                     | Intervyu tayyorgarligi, real loyihalar                                |
 
 ---
 
-## 🔥 **1-Bosqich: Go Asoslarini Mukammal O‘rganish (2 hafta)**
+## 🔥 **1-Bosqich: Go Asoslari + CLI Dasturlar (2 hafta)**
 
 ### 🎯 1-Hafta: Go Asoslari
 
-**Har kunlik 7 soatlik tartib:**
-
-* **17:00–19:00**: Go sintaksisi + Go Tour
-* **19:00–21:00**: Amaliy mashqlar
-* **21:00–23:00**: Mini loyiha ustida ishlash
-* **23:00–00:00**: Kodlarni ko‘rib chiqish, test yozish
-
 #### O‘rganiladigan mavzular:
 
-* ✅ Go o‘rnatish, `go mod`, `go run`, `go build`
-* ✅ O‘zgaruvchilar, turlar, konstantalar, funksiyalar
-* ✅ Shart operatorlari: `if`, `else`, `switch`, `for` loop
-* ✅ Massivlar, slices, maps, structs
-* ✅ Ko‘rsatkichlar (Pointers — juda muhim!)
-* ✅ Paketlar va importlar
+- ✅ Go o‘rnatish (`go mod`, `go run`, `go build`)
+- ✅ O‘zgaruvchilar, turlar, konstantalar, funksiyalar
+- ✅ Shart operatorlari: `if`, `else`, `switch`, `for` loop
+- ✅ Massivlar, slices, maps, structs
+- ✅ Ko‘rsatkichlar (Pointers)
+- ✅ Paketlar va importlar
 
 #### Amaliy loyihalar:
 
-1. **CLI Kalkulyator** – oddiy arifmetik amallar
-2. **Fayl menejeri** – fayllarni o‘qish/yozish
-3. **JSON Parser** – JSON bilan ishlash
+1. **CLI Kalkulyator**
+2. **Fayl menejeri**
+3. **JSON Parser**
 
 ---
 
@@ -51,33 +43,33 @@
 
 #### O‘rganiladigan mavzular:
 
-* ✅ **Gorutinalar va kanallar** (Go ning yuragi)
-* ✅ **Interfeyslar** (polimorfizm)
-* ✅ **Xatoliklarni boshqarish** (custom errorlar)
-* ✅ **Test yozish** (`go test`, table-driven tests)
-* ✅ **Sync paketi** (Mutex, WaitGroup)
+- ✅ Gorutinalar va kanallar
+- ✅ Interfeyslar
+- ✅ Xatoliklarni boshqarish
+- ✅ Test yozish (`go test`)
+- ✅ Sync paketi (Mutex, WaitGroup)
 
 #### Amaliy loyihalar:
 
-1. **Parallel fayl protsessori** – bir nechta faylni bir vaqtda o‘qish
-2. **Worker Pool** – gorutinalar bilan task bajarish
-3. **CLI Chat** – kanallar orqali xabar yuborish
+1. **Parallel fayl protsessori**
+2. **Worker Pool**
+3. **CLI Chat**
 
 ---
 
-## 🔥 **2-Bosqich: Web Backend Ustasi Bo‘lish (4 hafta)**
+## 🔥 **2-Bosqich: Web Backend + MySQL (4 hafta)**
 
 ### 🎯 3-Hafta: HTTP Server va Marshrutlash
 
-#### O‘rganish:
+#### O‘rganiladigan mavzular:
 
-* ✅ `net/http` paketi
-* ✅ **Gin Framework** (Go'da eng mashhur framework)
-* ✅ Middleware, kontekst bilan ishlash
-* ✅ JSON bilan ishlash, validatsiya
-* ✅ Status kodlar va headerlar
+- ✅ `net/http`
+- ✅ Gin framework
+- ✅ Middleware, kontekst
+- ✅ JSON marshalling/unmarshalling
+- ✅ Validatsiya
 
-#### Amaliy loyiha:
+#### Loyiha:
 
 **Kitoblar API**
 
@@ -91,57 +83,59 @@ DELETE /books/:id      - kitobni o‘chirish
 
 ---
 
-### 🎯 4-Hafta: Ma’lumotlar bazasi bilan integratsiya
+### 🎯 4-Hafta: MySQL bilan integratsiya
 
-#### O‘rganish:
+#### O‘rganiladigan mavzular:
 
-* ✅ **PostgreSQL** (professional darajadagi tanlov)
-* ✅ **GORM** (Go uchun ORM)
-* ✅ Migratsiyalar
-* ✅ Ulanish havzasi (Connection Pooling)
-* ✅ SQL injectiondan himoya
+- ✅ MySQL o'rnatish (XAMPP/standalone)
+- ✅ SQL asoslari: `SELECT`, `INSERT`, `UPDATE`, `JOIN`, `GROUP BY`, `HAVING`
+- ✅ Go dan MySQL ga ulanish (`database/sql`, `mysql driver`)
+- ✅ ORM vs raw SQL farqi
+- ✅ Migratsiyalar (`golang-migrate/migrate`)
+- ✅ Connection pooling
+- ✅ SQL injectiondan himoya
 
-#### Amaliy loyiha:
+#### Loyiha:
 
-**Foydalanuvchilarni boshqarish tizimi**
+**Foydalanuvchi boshqaruvi (MySQL bilan)**
 
 * Ro‘yxatdan o‘tish / Kirish
-* Parolni himoyalash (bcrypt)
+* Parolni bcrypt orqali xeshlash
 * CRUD amallari
 
 ---
 
 ### 🎯 5-Hafta: Avtorizatsiya va xavfsizlik
 
-#### O‘rganish:
+#### O‘rganiladigan mavzular:
 
-* ✅ **JWT avtorizatsiya**
-* ✅ Parolni xesh qilish
-* ✅ CORS sozlamalari
-* ✅ Kiritilgan ma’lumotlarni tekshirish
-* ✅ So‘rovni cheklash (rate limiting)
+- ✅ JWT avtorizatsiya
+- ✅ CORS sozlamalari
+- ✅ Rate limiting
+- ✅ Validatsiya (validator kutubxonasi)
+- ✅ XSS/CSRF himoyalari
 
-#### Amaliy loyiha:
+#### Loyiha:
 
 **Xavfsiz Blog API**
 
 * JWT orqali kirish
-* Faqat avtorizatsiyadan o‘tganlar foydalanishi
+* Faqat avtorizatsiyadan o'tganlar foydalanishi
 * Rollar (admin, oddiy foydalanuvchi)
 
 ---
 
 ### 🎯 6-Hafta: Kengaytirilgan backend
 
-#### O‘rganish:
+#### O‘rganiladigan mavzular:
 
-* ✅ **Log yozish** (strukturali loglar)
-* ✅ **Konfiguratsiya** (env fayllar bilan ishlash)
-* ✅ **Yumshoq to‘xtatish** (graceful shutdown)
-* ✅ **Health check** funksiyasi
-* ✅ **Redis** bilan kesh qilish
+- ✅ Log yozish (logrus, zap)
+- ✅ Konfiguratsiya (viper, .env)
+- ✅ Graceful shutdown
+- ✅ Health check
+- ✅ Redis bilan kesh qilish
 
-#### Amaliy loyiha:
+#### Loyiha:
 
 **E-commerce API**
 
@@ -156,15 +150,15 @@ DELETE /books/:id      - kitobni o‘chirish
 
 ### 🎯 7–8-Haftalar: DevOps va Deployment
 
-#### O‘rganish:
+#### O‘rganiladigan mavzular:
 
-* ✅ **Docker** (konteynerizatsiya)
-* ✅ **Docker Compose** (bir nechta servis)
-* ✅ **GitHub Actions** (CI/CD)
-* ✅ Muhitlarni boshqarish (production, dev)
-* ✅ Monitoring va loglash
+- ✅ Docker
+- ✅ Docker Compose
+- ✅ GitHub Actions (CI/CD)
+- ✅ Muhitlarni boshqarish
+- ✅ Monitoring va loglash
 
-#### Amaliy loyiha:
+#### Loyiha:
 
 **Mikroxizmatlar arxitekturasi**
 
@@ -175,7 +169,7 @@ DELETE /books/:id      - kitobni o‘chirish
 
 ---
 
-### 🎯 9–10-Haftalar: Portfolio va ishga tayyorgarlik
+### 🎯 9–10-Haftalar: Portfolio va intervyu tayyorlov
 
 #### Portfolio loyihalari:
 
@@ -183,114 +177,89 @@ DELETE /books/:id      - kitobni o‘chirish
 2. **URL qisqartiruvchi** (bit.ly kloni)
 3. **Real-time Chat API** (WebSocket bilan)
 
-#### Ishga tayyorgarlik:
+#### Intervyu tayyorlov:
 
-* ✅ GitHub portfolio tayyorlash
-* ✅ Rezyume yozish
-* ✅ Texnik intervyu tayyorlov
-* ✅ Arxitektura asoslari
-* ✅ Mashq intervyular
+- ✅ GitHub portfolio tayyorlash
+- ✅ Rezyume yozish
+- ✅ Texnik savollar
+- ✅ Arxitektura savollari
+- ✅ Mashq suhbatlar
 
 ---
 
-## 🕓 **Har Kunlik Optimal Rejim (17:00–00:00)**
+## 🕓 Har Kunlik Optimal Rejim (17:00–00:00)
 
 | Vaqt        | Faoliyat                              |
 | ----------- | ------------------------------------- |
-| 17:00–18:30 | Nazariya o‘rganish, dars ko‘rish      |
-| 18:30–20:30 | Kod yozish, amaliy mashqlar           |
+| 17:00–18:30 | Nazariya o‘rganish                    |
+| 18:30–20:30 | Kod yozish                            |
 | 20:30–22:00 | Loyihada ishlash                      |
-| 22:00–23:00 | Test yozish, kodni yaxshilash         |
-| 23:00–00:00 | Go forum, kod ko‘rish, kunni rejalash |
+| 22:00–23:00 | Test yozish                           |
+| 23:00–00:00 | Kod ko‘rish, forumda ishtirok etish  |
 
 ---
 
-## 🛠 **Zaruriy Vositalar va Resurslar**
+## 🛠 Zaruriy Vositalar
 
 ### Ish muhit:
+- VS Code + Go extension
+- MySQL (phpMyAdmin, DBeaver)
+- Postman / Insomnia
+- Git + GitHub
 
-* **Muharrir**: VS Code + Go extension
-* **Ma’lumotlar bazasi**: PostgreSQL + pgAdmin
-* **API test**: Postman yoki Insomnia
-* **Versiya nazorati**: Git + GitHub
-
-### O‘rganish manbalari:
-
-* [go.dev](https://go.dev)
-* [Go by Example](https://gobyexample.com)
-* "Let's Go" kitobi — Alex Edwards
-* YouTube: Anthony GG, Golang Dojo
-
-### Mashq saytlari:
-
-* LeetCode (algoritmlar)
-* HackerRank (Go challenge’lar)
-* Exercism (Go yo‘nalishi)
+### Resurslar:
+- [go.dev](https://go.dev)
+- [Go by Example](https://gobyexample.com)
+- "Let's Go" kitobi — Alex Edwards
+- YouTube: Anthony GG, Golang Dojo
 
 ---
 
-## ✅ **Haftalik Yutuqlar**
+## ✅ Haftalik Yutuqlar
 
-* **1–2-hafta**: Go asoslarini egallagan, gorutinalar va test yozish qila oladi
-* **3–4-hafta**: REST API qurish, baza bilan ishlash
-* **5–6-hafta**: Xavfsizlik, kesh, struktura tuzish
-* **7–8-hafta**: Docker, CI/CD, cloudga joylash
-* **9–10-hafta**: Portfolio tayyor, intervyuga tayyor
-
----
-
-## 🚨 **Muvaffaqiyat Kalitlari**
-
-### Har kuni:
-
-* Kod yozish
-* GitHub’ga commit qilish
-* Kodga test yozish
-* Go kodini o‘qish
-
-### Har hafta:
-
-* Natijani ko‘rib chiqish
-* Rejani moslashtirish
-* Kodga fikr olish
-* Keyingi hafta rejalash
-
-### E’tiborli xatolar:
-
-* ❌ Faqat video ko‘rish, kam kod yozish
-* ❌ Ideal kod orqasidan quvish
-* ❌ Jamoasiz ishlash
-* ❌ Testlarni o‘tkazib yuborish
+| Hafta     | Natija                                                         |
+|-----------|----------------------------------------------------------------|
+| 1–2       | Go asoslari, gorutina, test                                   |
+| 3–4       | REST API, MySQL bilan ishlash                                 |
+| 5–6       | Xavfsizlik, Redis, validatsiya                                |
+| 7–8       | Docker, CI/CD                                                 |
+| 9–10      | Portfolio, intervyu                                           |
 
 ---
 
-## 🏆 **Yakuniy Portfolio Loyihalari**
+## 🚨 Muvaffaqiyat Kalitlari
 
-1. **Auth bilan REST API** (JWT, CRUD, PostgreSQL)
+✅ Har kuni kod yozing  
+✅ GitHub’ga commit qiling  
+✅ Test yozing  
+✅ Qiyinchiliklarni izlab boring  
+
+❌ Faqat video ko'rish  
+❌ Ideal kodga intilish  
+❌ Barchasini bir o'tkazish
+
+---
+
+## 🏆 Yakuniy Portfolio Loyihalari
+
+1. **Auth bilan REST API** (JWT, CRUD, MySQL)
 2. **Mikroxizmatlar** (Docker, gRPC)
 3. **Real-time dastur** (WebSocket, Redis)
-4. **CLI dastur** (real foydali vosita)
-
-### Portfolio sifat tekshiruvi:
-
-* ✅ Toza va tushunarli kod
-* ✅ README hujjati
-* ✅ Test qamrovi 70%+
-* ✅ Docker bilan oson ishga tushadi
-* ✅ Live versiya linki mavjud
+4. **CLI dastur** (real vosita)
 
 ---
 
-## 🎯 **Sentabr natijasi**
+## 🎯 Sentabr natijasi
 
-Sen o‘zingni **Junior Go Backend Dasturchi** deb ayta olasan, agar:
+Siz **Junior Go Backend Dasturchi** deb aytishingiz mumkin, agar:
 
-* ✅ REST API ni mustaqil tuza olsang
-* ✅ Baza sxemalarini loyihalab olsang
-* ✅ Avtorizatsiya va autentifikatsiyani joriy qilsang
-* ✅ Concurrent dasturlar tuza olsang
-* ✅ Test yozishni bilsang
-* ✅ Ilovani deploy qila olsang
-* ✅ Production xatolarni tuzata olsang
-* ✅ Arxitektura qarorlaringni tushuntira olsang
+✅ REST API tuza olasiz  
+✅ MySQL sxemalarini loyihalaysiz  
+✅ JWT avtorizatsiyani joriy qilasiz  
+✅ Concurrent dasturlar yaratasiz  
+✅ Test yozasiz  
+✅ Ilovani deploy qilasiz  
+✅ Production xatolarni hal qilasiz  
+✅ Arxitekturaviy qarorlaringizni tushuntira olasiz
 
+---
