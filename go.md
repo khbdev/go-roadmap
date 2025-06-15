@@ -1,9 +1,6 @@
 
 ---
 
-# 🚀 Yangilangan: Sentabrgacha Go Backend Dasturchi Bo'lish Yo'l Xaritasi (MySQL bilan)
-
-## 🎯 Maqsad: Ishga tayyor **Junior Go Backend Dasturchi**
 
 ---
 
