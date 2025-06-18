@@ -1,232 +1,220 @@
 
-- Har bir oy alohida blok sifatida aniqlangan
-- Har bir hafta uchun aniq mavzular to'liq tafsilotlari bilan keltirilgan
-- Mavzular tartiblangan va chuqurlashtirilgan
-- Amaliyotlar real loyiha yoki foydali CLI/Web dastur sifatida belgilangan
-- Umumiy struktura yanada ravon, oson o'qish uchun formatlandi
+---
+
+## 🔵 1-OY: Go Asoslari + CLI + REST API
+
+### ✅ 1-Hafta: Go Asoslari va CLI
+
+**Nazariya:**
+
+* Go o‘rnatish, `go mod init`, fayl tuzilmasi
+* O‘zgaruvchilar, funksiyalar, pointerlar
+* Struct, slice, map, interface
+* If/switch, for loop, error handling
+* Fayllar bilan ishlash, JSON parsing
+
+**Amaliyot:**
+
+* CLI kalkulyator
+* JSON parser (structga parse qilish)
 
 ---
 
-# 🚀 Junior Go Backend Developer Uchun 3-Oylik Mukammal Roadmap
+### ✅ 2-Hafta: Gorutinalar, Channel, Test
 
-## 💡 Maqsad: 
-3 oy davomida **Junior Go Backend Developer** darajasiga yetib borish, ya'ni:
-- REST API yaratish
-- JWT bilan auth
-- MySQL, Redis, Docker bilan ishlash
-- WebSocket, testlar yozish
-- Mikroservis arxitekturasini tushunish
-- Portfolio loyihalarini yaratish va GitHubda joylashtirish
+**Nazariya:**
 
----
+* `go func()`, gorutinalar va channel
+* Buffered/unbuffered channel, `select`
+* `sync.Mutex`, `WaitGroup`
+* Unit test, table-driven test, benchmark
 
-# 🔵 1-OY: GO TILINING ASOSLARI VA CLI DASTURLAR
+**Amaliyot:**
 
-## ✅ 1-Hafta: Kirish va Til Asoslari
-
-### Nazariya:
-- Go o'rnatish (Go modullar tizimi, `go.mod`)
-- O'zgaruvchilar, ma'lumot turlari (`int`, `string`, `bool`, `struct`)
-- Operatorlar, `if/else`, `for`, `switch`
-- Funksiya sintaksisi, parametrlar, qaytaruvchi qiymatlar
-- Pointerlar, receiver funksiyalar
-- Slice va massivlar bilan ishlash
-- Maplar (kalit-qiymat juftligi)
-
-### Amaliyot:
-- Oddiy CLI kalkulyator dasturi
-- JSON parsing (masalan, stringdan structga o'tkazish)
+* Parallel fayl o‘qish dasturi
+* Unit test bilan JSON parser
 
 ---
 
-## ✅ 2-Hafta: Xatolar, Testlar, Interfeyslar
+### ✅ 3-Hafta: HTTP Server, Gin Framework, REST
 
-### Nazariya:
-- `error` interfeysi va xatoliklarni boshqarish
-- `panic`, `recover`, `defer` — xavfsiz kod yozish
-- Interfeyslar orqali polimorfizm
-- Unit testlar (`go test`, table-driven test)
-- Test coverage nima va uning ahamiyati
+**Nazariya:**
 
-### Amaliyot:
-- Fayllarni o'qish/yozish CLI dasturi
-- JSON parserga unit testlar yozish
+* `net/http`, routing, handler
+* Gin framework, middleware, logging
+* JSON request/response, validatsiya
+* CRUD REST API (memoryda vaqtincha saqlash)
 
----
+**Amaliyot:**
 
-## ✅ 3-Hafta: Gorutinalar, Kanallar, Parallel Ishlovchi Sistemalar
-
-### Nazariya:
-- Gorutina nima? `go func()` sintaksisi
-- Kanallar: buffered/unbuffered kanallar
-- `sync.WaitGroup`, `sync.Mutex`, `sync.RWMutex`
-- Race condition va uni oldini olish
-- Worker Pool modeli: gorutinani cheklash
-
-### Amaliyot:
-- Parallelni fayllarni o'qish/qayta ishlash dasturi
-- Oddiy CLI chat (gorutina + kanal asosi)
+* Kitob CRUD API (Gin framework)
+* Logging va validatsiya middleware
 
 ---
 
-## ✅ 4-Hafta: HTTP Server va Gin Framework Boshlang'ich Daraja
+### ✅ 4-Hafta: MySQL + ORM + Relationship
 
-### Nazariya:
-- `net/http` paketi bilan server yaratish
-- Gin framework asoslari: router, handler, context
-- Middleware: logging, recovery, authentication
-- JSON marshaling/unmarshaling
-- Request validatsiya (masalan, `go-playground/validator`)
+**Nazariya:**
 
-### Amaliyot:
-- Kitoblar CRUD API (GET, POST, PUT, DELETE)
-- Logging middleware yozish
+* SQL asoslari: SELECT, INSERT, UPDATE, DELETE
+* MySQL + Go (`gorm.io/gorm`)
+* One-to-One, One-to-Many, Many-to-Many
+* JOIN, foreign key, migrate qilish
+* SQL injectiondan himoyalanish
 
----
+**Amaliyot:**
 
-# 🔵 2-OY: WEB BACKEND + MYSQL + AUTHENTIKATSIYA
-
-## ✅ 5-Hafta: SQL Asoslari va Go Integratsiyasi
-
-### Nazariya:
-- SQL asoslari: SELECT, INSERT, UPDATE, DELETE
-- JOIN turlari (INNER, LEFT, RIGHT)
-- GROUP BY, subquery, indexlar
-- Go dan MySQL ga ulanish (`database/sql`, `go-sql-driver/mysql`)
-- Migratsiya vositalari (`golang-migrate/migrate`)
-- SQL injectionni oldini olish (prepared statements)
-
-### Amaliyot:
-- Foydalanuvchilar uchun CRUD API (MySQL bazasi)
-- Auth API: register, login (parol hash qilish)
+* User, Post, Comment CRUD (MySQL bilan)
+* User-Post (1\:M), Post-Tag (M\:M) relation
 
 ---
 
-## ✅ 6-Hafta: JWT, Xavfsizlik, Rollar
+## 🔵 2-OY: JWT, Redis, Queue, Docker, Loyihalar
 
-### Nazariya:
-- JWT token yaratish va tekshirish (`dgrijalva/jwt-go`)
-- Token lifecycle: expire, refresh token mexanizmi
-- CORS, CSRF, XSS, Rate Limiting tushunchalari
-- Middleware orqali ro'yxatdan o'tish va rollarni tekshirish
+### ✅ 5-Hafta: Auth + JWT + Role
 
-### Amaliyot:
-- Blog API: postlar ustida CRUD (JWT bilan himoyalangan)
-- Admin va oddiy user rollari bilan kirish cheklovi
+**Nazariya:**
 
----
+* JWT nima, qanday ishlaydi
+* `github.com/golang-jwt/jwt`
+* Access/refresh token, expiry, middleware
+* Role-based access: admin/user
 
-## ✅ 7-Hafta: Redis, Loglash, Konfiguratsiya
+**Amaliyot:**
 
-### Nazariya:
-- Redis bilan ishlash (`go-redis`)
-- Keshlash: tez-tez so'raladigan ma'lumotlarni saqlash
-- Loglash vositalari: `logrus`, `zap`
-- Konfiguratsiya: `.env`, `Viper` orqali sozlama yuklash
-- Health Check, Graceful Shutdown
-
-### Amaliyot:
-- E-commerce API: mahsulotlar, savatcha, buyurtma
-- Mahsulotlar uchun Redis keshi
+* Auth API (register, login, refresh)
+* Blog API JWT orqali himoya
 
 ---
 
-# 🔵 3-OY: ISHLAB CHIQARISHGA TAYYORLIK + PORTFOLIO
+### ✅ 6-Hafta: Redis + Caching + Session
 
-## ✅ 8-Hafta: Docker, CI/CD, Deployment
+**Nazariya:**
 
-### Nazariya:
-- Dockerfile yozish: Go ilovalarini konteynerga joylash
-- Docker Compose: bir nechta servislarni birlashtirish
-- GitHub Actions bilan CI/CD pipeline yaratish
-- Build pipeline: test → build → deploy
-- Monitoring: Prometheus, Grafana integratsiyasi
+* Redis tushunchasi va Go bilan ishlash (`go-redis`)
+* Caching patternlar: read-through, write-through
+* Session saqlash, TTL, expire
+* Rate limit qilish
 
-### Amaliyot:
-- Mikroservislar: user-service, product-service, order-service
-- API Gateway bilan yagona kirish nuqtasi
+**Amaliyot:**
 
----
-
-## ✅ 9-Hafta: Loyiha #1 - Trello Kloni (REST API)
-
-### Funktsiyalar:
-- JWT bilan authentifikatsiya
-- Tasklar: yaratish, o'zgartirish, o'chirish
-- Boardlar, kolonkalar, cardlar
-- MySQL orqali ma'lumot saqlash
+* Redis bilan product caching
+* Session-based login tizimi
 
 ---
 
-## ✅ 10-Hafta: Loyiha #2 - URL Qisqartiruvchi
+### ✅ 7-Hafta: Queue + Job + Email
 
-### Funktsiyalar:
-- JWT bilan auth
-- URL qisqartirish, statistikani ko'rish
-- Redisda caching qilish
-- MySQL bilan bog'lanish
+**Nazariya:**
 
----
+* Background jobs: nima va nima uchun
+* `asynq`, `go-workers`, `rabbitmq`
+* Retry, delay, priority, dead letter queue
+* Email yuborish (`gomail`)
 
-## ✅ 11-Hafta: Loyiha #3 - Real-Time Chat
+**Amaliyot:**
 
-### Funktsiyalar:
-- WebSocket orqali real-time aloqa
-- Redis pub/sub orqali habar jo'natish/qabul qilish
-- JWT bilan authentifikatsiya
-- Room-based chat mexanizmi
+* Signup -> email yuboruvchi background job
+* Asynq bilan task queue
 
 ---
 
-## ✅ 12-Hafta: Intervyu Tuzoqlari, Rezyume, GitHub
+### ✅ 8-Hafta: Docker + CI/CD
 
-### Nazariya:
-- Texnik suhbat tayyorgarligi: algoritmlar, test topshiriqlari
-- Arxitektura savollari: mikroservislar, cache, DB relatsiya
-- GitHub profilini mustahkamlash (README, LICENSE, Dockerfile)
-- Rezyume yozish (English hamda O'zbekcha)
-- LeetCode / HackerRank masalalarini yechish
+**Nazariya:**
 
-### Amaliyot:
-- Portfolio loyihalarni GitHubga joylash
-- README fayl yozish, loyihalarni tozalash
-- Dockerfile, .gitignore qo'shish
+* Dockerfile yozish, konteyner tushunchasi
+* Docker Compose: API + Redis + DB
+* GitHub Actions bilan test/build
+* CI/CD pipeline: test -> build -> deploy
+
+**Amaliyot:**
+
+* Full API ni docker-compose bilan ishga tushirish
+* GitHub Action orqali CI/CD pipeline qilish
 
 ---
 
-# 📋 Har Kunlik Ish Rejasi (Maslahat Beriladi)
+## 🔵 3-OY: Mikroservis, gRPC, Monitoring, Portfolio
+
+### ✅ 9-Hafta: Mikroservis arxitekturasi
+
+**Nazariya:**
+
+* Monolit vs mikroservis
+* Service-to-service kommunikatsiya
+* API Gateway, Service Discovery
+
+**Amaliyot:**
+
+* User-service, Product-service, Order-service
+* API Gateway (Gin bilan)
+
+---
+
+### ✅ 10-Hafta: gRPC + Protobuf
+
+**Nazariya:**
+
+* gRPC nima, qachon kerak
+* Protobuf yozish, compile qilish
+* gRPC server/client yozish
+
+**Amaliyot:**
+
+* User-service ni gRPC qilish
+* Frontend bilan REST, ichki aloqa gRPC
+
+---
+
+### ✅ 11-Hafta: GraphQL + Monitoring
+
+**Nazariya:**
+
+* GraphQL nima, RESTdan farqi
+* Schema, query, mutation
+* Prometheus, Grafana monitoring
+
+**Amaliyot:**
+
+* Product GraphQL API
+* Prometheus bilan API monitoring
+
+---
+
+### ✅ 12-Hafta: Portfolio + GitHub + Rezyume
+
+**Nazariya:**
+
+* GitHub profiling, README yozish
+* Portfolio loyihalarni tayyorlash
+* Rezyume tayyorlash (EN va UZ)
+
+**Amaliyot:**
+
+* 3 ta loyiha: Auth API, E-commerce, Mikroservis
+* GitHub’ga joylash, README, Dockerfile
+
+---
+
+## 📋 Kunlik Tavsiya Reja
 
 | Vaqt        | Faoliyat              |
 | ----------- | --------------------- |
-| 17:00–18:30 | Nazariya o‘rganish    |
-| 18:30–20:30 | Kod yozish            |
-| 20:30–22:00 | Loyihada ishlash      |
-| 22:00–23:00 | Test yozish           |
-| 23:00–00:00 | Forum, review, GitHub |
+| 17:00–18:00 | Nazariya              |
+| 18:00–20:00 | Kod yozish, API       |
+| 20:00–21:30 | Loyihada ishlash      |
+| 21:30–22:30 | GitHub, qayta ko‘rish |
 
 ---
 
-# 🎯 Yakuniy Natija (Sentabr Oyigacha Yetish Kerak):
+## 📚 Tavsiya Manbalar:
 
-✅ REST API yozish  
-✅ JWT bilan authentifikatsiya  
-✅ MySQL, Redis, Docker bilan ishlash  
-✅ WebSocket bilan real-time aloqa  
-✅ Test yozish (unit, integration)  
-✅ Mikroservislar yaratish  
-✅ GitHub portfolio tayyor  
-
-Agar barcha amaliyotlarni bajarsangiz, siz "Junior Go Backend Developer" sifatida ishga kirishingiz mumkin!
-
----
-
-# 📚 Tavsiya Etuvchan Manbalar:
-
-- [https://go.dev](https://go.dev) – Rasmiy hujjatlar
-- [https://gobyexample.com](https://gobyexample.com) – Praktik misollar
-- **Kitob:** *Let's Go* by Alex Edwards – backend uchun ideal
-- **YouTube:** Golang Dojo, Anthony GG – video darslar
-- **LeetCode / HackerRank** – masala yechish
+* [https://go.dev](https://go.dev) — rasmiy hujjat
+* [https://gobyexample.com](https://gobyexample.com) — misollar
+* Kitob: "Let’s Go" – Alex Edwards
+* YouTube: Golang Dojo, Hussein Nasser
+* GitHub: real loyihalarni o‘rganish
 
 ---
 
