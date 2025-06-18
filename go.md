@@ -5,19 +5,97 @@
 
 ### ✅ 1-Hafta: Go Asoslari va CLI
 
-**Nazariya:**
+### 📘 Nazariya:
 
-* Go o‘rnatish, `go mod init`, fayl tuzilmasi
-* O‘zgaruvchilar, funksiyalar, pointerlar
-* Struct, slice, map, interface
-* If/switch, for loop, error handling
-* Fayllar bilan ishlash, JSON parsing
+#### 1. Go O‘rnatish va Boshlang‘ich Tuzilish
 
-**Amaliyot:**
+* `go install`, `go run`, `go build`, `go mod init`
+* Fayl tuzilmasi: `package main`, `import`, `func main()`
 
-* CLI kalkulyator
-* JSON parser (structga parse qilish)
+#### 2. O‘zgaruvchilar va Data Types
 
+* `var`, `:=` shorthand
+* Data types: `int`, `float64`, `string`, `bool`
+* Constants: `const`
+
+#### 3. Chiqarish va Formatlash
+
+* `fmt.Println`, `fmt.Printf`, `fmt.Sprintf`
+
+#### 4. Operatorlar
+
+* Aritmetik: `+`, `-`, `*`, `/`, `%`
+* Taqqoslash: `==`, `!=`, `>`, `<`, `>=`, `<=`
+* Mantiqiy: `&&`, `||`, `!`
+
+#### 5. Shart Operatorlari
+
+* `if`, `else`, `else if`
+* `switch`, `case`, `default`
+
+#### 6. Takrorlash Operatorlari
+
+* `for`, `for range`
+
+#### 7. Funksiyalar
+
+* Oddiy funksiya, parametrlar va qaytarish
+* `return`, `multiple return`
+* Rekursiya
+
+#### 8. Pointerlar
+
+* `*` va `&` operatorlari bilan ishlash
+* Value vs Reference
+
+#### 9. Struct
+
+* Struct yaratish, fieldlar, struct ichida methodlar
+
+#### 10. Interface
+
+* Interface yaratish, struct bilan ishlatish
+
+#### 11. Map
+
+* Map yaratish, o‘zgartirish, o‘qish, o‘chirish
+
+#### 12. Error Handling
+
+* `error` tipi, `errors.New`, `fmt.Errorf`, custom error
+
+#### 13. Time Moduli
+
+* `time.Now()`, `time.Format()`, `time.Sleep()`
+
+#### 14. Fayllar Bilan Ishlash
+
+* `os.Open`, `ioutil.ReadFile`, `bufio.NewReader`
+* Faylga yozish: `os.Create`, `WriteString`
+
+#### 15. JSON Parsing
+
+* `encoding/json`: `json.Unmarshal`, `json.Marshal`
+* Struct bilan ishlatish
+
+#### 16. Packages
+
+* Custom package yaratish va ulardan foydalanish
+
+---
+
+### 🧪 Amaliyot:
+
+#### 1. CLI Kalkulyator
+
+* Foydalanuvchidan ikki son va operator olish
+* Amalni bajarib natijani chiqarish
+
+#### 2. JSON Parser
+
+* JSON fayldan ma’lumot o‘qish
+* Structga parse qilish
+* Struct ma’lumotlarini chiqarish
 ---
 
 ### ✅ 2-Hafta: Gorutinalar, Channel, Test
