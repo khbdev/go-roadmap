@@ -270,7 +270,7 @@
 
 **Amaliyot:**
 
-* 3 ta loyiha: Auth API, E-commerce, Mikroservis
+* 3 ta loyiha: Auth API, Todolist, blog mikroservis
 * GitHub’ga joylash, README, Dockerfile
 
 ---
