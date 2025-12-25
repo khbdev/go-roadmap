@@ -1,81 +1,175 @@
 
 
-## **3 Oylik Roadmap (12 hafta)**
+# **3 Oylik Junior Go Backend Roadmap (12 hafta)**
 
-### **1-hafta:** Asosiy tayyorgarlik & repeat
+---
 
-* **OS & Internet basics** (Linux commands, networking basics, bash)
-* **Git** (init, clone, commit, branch, merge, rebase, pull, push)
-* **Amaliyot:** kichik CLI project yaratish, Git bilan boshqarish
+## **1-hafta: Golang Fundamentals**
 
-### **2-hafta:** Golang fundamentals
+**Maqsad:** Go sintaksisi va asosiy tuzilmalarga ega bo‘lish
 
-* Types, structs, arrays, slices, maps
-* Functions, interfaces, methods
-* Concurrency basics (goroutines, channels)
-* **Amaliyot:** CRUD API bilan oddiy Go server
+* **Kun 1:** Go o‘rnatish, VSCode + Go plugin, `hello world`, basic types
+* **Kun 2:** Variables, constants, operators
+* **Kun 3:** Loops, conditions, arrays, slices
+* **Kun 4:** Maps, functions
+* **Kun 5:** Structs, pointers
+* **Kun 6:** Packages, imports, modules
+* **Kun 7:** Mini amaliyot: CLI calculator yozish
 
-### **3-hafta:** Database basics & REST API
+---
 
-* PostgreSQL & MongoDB basic CRUD
-* SQL joins, indexes, relationships
-* **REST API** creation with Gin
-* **Amaliyot:** User & TodoList API
+## **2-hafta: Go Advanced + Concurrency**
 
-### **4-hafta:** Advanced API & Testing
+**Maqsad:** Advanced Go, concurrency, error handling
 
-* GraphQL basics
-* gRPC basics
-* **Testing:** Unit tests + Integration tests
-* **Amaliyot:** REST + GraphQL + gRPC simple project
+* **Kun 1:** Interfaces, embedding
+* **Kun 2:** Error handling, panic & recover
+* **Kun 3:** Goroutines basics
+* **Kun 4:** Channels, buffered vs unbuffered
+* **Kun 5:** Select statement, timeout, context
+* **Kun 6:** File handling (`os`, `io/ioutil`, `bufio`)
+* **Kun 7:** Mini amaliyot: Concurrent file reader
 
-### **5-hafta:** File Storage & Caching
+---
 
-* Local file storage, AWS S3 basics
-* **Caching:** Redis, Memcached basic usage
-* **Amaliyot:** Todo API with caching + file uploads
+## **3-hafta: REST API + HTTP**
 
-### **6-hafta:** Auth & Security
+**Maqsad:** REST API yozish va JSON bilan ishlash
 
-* JWT, OAuth2, RBAC, token auth
-* Security basics: input validation, encryption
-* **Amaliyot:** Secure API + Auth middleware
+* **Kun 1:** `net/http`, GET/POST requests
+* **Kun 2:** JSON encode/decode, structs mapping
+* **Kun 3:** Router: `gorilla/mux` yoki `gin`
+* **Kun 4:** Middleware (logging, CORS)
+* **Kun 5:** CRUD endpoints
+* **Kun 6:** Error handling, response format
+* **Kun 7:** Mini project: TodoList REST API
 
-### **7-hafta:** CI/CD & Containers
+---
 
-* GitHub Actions / GitLab CI basics
-* Docker basics: images, containers, Dockerfile
-* **Amaliyot:** Dockerize API + simple CI pipeline
+## **4-hafta: gRPC & GraphQL**
 
-### **8-hafta:** Highload testing & Scaling Database
+**Maqsad:** gRPC va GraphQL integratsiyasi
 
-* k6 basics (load tests)
-* Database scaling basics (indexes, replication, partitioning)
-* **Amaliyot:** Load test API, optimize queries
+* **Kun 1:** gRPC basics: proto files
+* **Kun 2:** gRPC server & client
+* **Kun 3:** gRPC streaming (bi-directional)
+* **Kun 4:** GraphQL basics: schema, query, mutation
+* **Kun 5:** GraphQL server in Go (`graphql-go`)
+* **Kun 6:** Integratsiya REST + gRPC + GraphQL
+* **Kun 7:** Mini project: Book service REST + gRPC + GraphQL
 
-### **9-hafta:** Message Brokers
+---
 
-* RabbitMQ basics
-* Kafka basics
-* **Amaliyot:** Simple producer-consumer microservice communication
+## **5-hafta: Testing**
 
-### **10-hafta:** Architectural Patterns & Microservices
+**Maqsad:** Unit va integration testlar
 
-* Monolith vs Microservices
-* Service separation, interfaces, contracts
-* **Amaliyot:** Split Todo API into microservices
+* **Kun 1:** `testing` package basics
+* **Kun 2:** Table-driven tests
+* **Kun 3:** Mocking
+* **Kun 4:** Integration testing
+* **Kun 5:** Test coverage & benchmarks
+* **Kun 6:** Test REST API endpoints
+* **Kun 7:** Mini project: TodoList test coverage
 
-### **11-hafta:** Monitoring & Logging
+---
 
-* Prometheus + Grafana basics
-* Logging & tracing: Loki + Jaeger
-* **Amaliyot:** Monitor API performance + trace requests
+## **6-hafta: Database (MongoDB + PostgreSQL)**
 
-### **12-hafta:** Documentation, VPS deployment & SDLC
+**Maqsad:** CRUD va database bilan ishlash
 
-* API documentation (Swagger)
-* ERD, InfraDiagram, Microservice Diagram
-* VPS deployment basics, SDLC overview
-* **Amaliyot:** Deploy microservices, document everything
+* **Kun 1:** MongoDB basics + Go driver
+* **Kun 2:** MongoDB CRUD operations
+* **Kun 3:** PostgreSQL basics + `database/sql`
+* **Kun 4:** GORM ORM
+* **Kun 5:** Relationships, indexes
+* **Kun 6:** Migration & seed data
+* **Kun 7:** Mini project: TodoList with Postgres + MongoDB backup
+
+---
+
+## **7-hafta: File Storage + Caching**
+
+**Maqsad:** File upload va caching
+
+* **Kun 1:** Local file storage
+* **Kun 2:** AWS S3 integration
+* **Kun 3:** Redis basics (set/get)
+* **Kun 4:** Redis expiration, caching strategies
+* **Kun 5:** Memcached basics
+* **Kun 6:** Caching API responses
+* **Kun 7:** Mini project: File upload + cached response
+
+---
+
+## **8-hafta: Highload + Auth**
+
+**Maqsad:** Load testing va xavfsiz API
+
+* **Kun 1:** k6 basics
+* **Kun 2:** Load testing REST API
+* **Kun 3:** JWT Auth basics
+* **Kun 4:** OAuth2 basics
+* **Kun 5:** RBAC + token auth
+* **Kun 6:** Protected routes implementation
+* **Kun 7:** Mini project: Auth + highload test
+
+---
+
+## **9-hafta: Security + CI/CD**
+
+**Maqsad:** Security va avtomatlashtirilgan deploy
+
+* **Kun 1:** HTTPS, TLS basics
+* **Kun 2:** SQL Injection, XSS, CSRF protection
+* **Kun 3:** Secrets management
+* **Kun 4:** GitHub Actions / GitLab CI basics
+* **Kun 5:** Build & test pipelines
+* **Kun 6:** Deploy to staging VPS
+* **Kun 7:** Mini project: Secure Go API + CI/CD
+
+---
+
+## **10-hafta: Scaling + Messaging**
+
+**Maqsad:** DB scaling va async messaging
+
+* **Kun 1:** Database sharding & replication basics
+* **Kun 2:** Connection pooling
+* **Kun 3:** RabbitMQ basics
+* **Kun 4:** RabbitMQ producer/consumer
+* **Kun 5:** Kafka basics
+* **Kun 6:** Kafka producer/consumer
+* **Kun 7:** Mini project: Async message processing service
+
+---
+
+## **11-hafta: Architecture + Containers**
+
+**Maqsad:** Monolith/Microservices + Docker
+
+* **Kun 1:** Monolith vs Microservices overview
+* **Kun 2:** Microservice design patterns
+* **Kun 3:** ERD + Infra diagram
+* **Kun 4:** Microservice diagram
+* **Kun 5:** Docker basics
+* **Kun 6:** Docker Compose + multi-container app
+* **Kun 7:** Mini project: Containerized microservice app
+
+---
+
+## **12-hafta: Monitoring, Logging, SDLC**
+
+**Maqsad:** Monitoring, log tracing va Web deploy
+
+* **Kun 1:** Prometheus + Grafana basics
+* **Kun 2:** Metrics collection + alert rules
+* **Kun 3:** Loki + Jaeger basics
+* **Kun 4:** Tracing requests
+* **Kun 5:** VPS deploy (NGINX, Go app)
+* **Kun 6:** SDLC best practices
+* **Kun 7:** Final project: Full Go API deployment + monitoring + logging
+
+---
 
 
