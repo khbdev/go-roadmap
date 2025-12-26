@@ -1,174 +1,241 @@
 
 
-# **3 Oylik Junior Go Backend Roadmap (12 hafta)**
+# 🚀 **3 OYLIK (12 HAFTA) GOLANG BACKEND ROADMAP**
+
+**Maqsad:** Strong Junior Go Developer
+**Format:** Har hafta → bilim + amaliy natija
 
 ---
 
-## **1-hafta: Golang Fundamentals**
+## 🟢 **1-OY: ASOS VA FUNDAMENT (1–4-hafta)**
 
-**Maqsad:** Go sintaksisi va asosiy tuzilmalarga ega bo‘lish
+### **1-hafta — OS + Developer muhiti**
 
-* **Kun 1:** Go o‘rnatish, VSCode + Go plugin, `hello world`, basic types
-* **Kun 2:** Variables, constants, operators
-* **Kun 3:** Loops, conditions, arrays, slices
-* **Kun 4:** Maps, functions
-* **Kun 5:** Structs, pointers
-* **Kun 6:** Packages, imports, modules
-* **Kun 7:** Mini amaliyot: CLI calculator yozish
+**Mavzular:**
 
----
+* Linux OS asoslari
+* Process, memory, file system
+* CLI, bash basic
+* Env variables
 
-## **2-hafta: Go Advanced + Concurrency**
+**Amaliy:**
 
-**Maqsad:** Advanced Go, concurrency, error handling
+* Linux’da Go o‘rnatish
+* CLI orqali build & run
+* `.env` bilan ishlash
 
-* **Kun 1:** Interfaces, embedding
-* **Kun 2:** Error handling, panic & recover
-* **Kun 3:** Goroutines basics
-* **Kun 4:** Channels, buffered vs unbuffered
-* **Kun 5:** Select statement, timeout, context
-* **Kun 6:** File handling (`os`, `io/ioutil`, `bufio`)
-* **Kun 7:** Mini amaliyot: Concurrent file reader
+👉 **Natija:** terminaldan qo‘rqmaydigan backendchi
 
 ---
 
-## **3-hafta: REST API + HTTP**
+### **2-hafta — Networking + Internet asoslari**
 
-**Maqsad:** REST API yozish va JSON bilan ishlash
+**Mavzular:**
 
-* **Kun 1:** `net/http`, GET/POST requests
-* **Kun 2:** JSON encode/decode, structs mapping
-* **Kun 3:** Router: `gorilla/mux` yoki `gin`
-* **Kun 4:** Middleware (logging, CORS)
-* **Kun 5:** CRUD endpoints
-* **Kun 6:** Error handling, response format
-* **Kun 7:** Mini project: TodoList REST API
+* TCP/IP, HTTP/HTTPS
+* DNS, Ports, Sockets
+* Request/Response flow
+* REST tushunchasi
 
----
+**Amaliy:**
 
-## **4-hafta: gRPC & GraphQL**
+* Oddiy HTTP server Go’da
+* curl bilan test qilish
 
-**Maqsad:** gRPC va GraphQL integratsiyasi
-
-* **Kun 1:** gRPC basics: proto files
-* **Kun 2:** gRPC server & client
-* **Kun 3:** gRPC streaming (bi-directional)
-* **Kun 4:** GraphQL basics: schema, query, mutation
-* **Kun 5:** GraphQL server in Go (`graphql-go`)
-* **Kun 6:** Integratsiya REST + gRPC + GraphQL
-* **Kun 7:** Mini project: Book service REST + gRPC + GraphQL
+👉 **Natija:** backend qanday ishlashini tushunadi
 
 ---
 
-## **5-hafta: Testing**
+### **3-hafta — Git (basic → advanced)**
 
-**Maqsad:** Unit va integration testlar
+**Mavzular:**
 
-* **Kun 1:** `testing` package basics
-* **Kun 2:** Table-driven tests
-* **Kun 3:** Mocking
-* **Kun 4:** Integration testing
-* **Kun 5:** Test coverage & benchmarks
-* **Kun 6:** Test REST API endpoints
-* **Kun 7:** Mini project: TodoList test coverage
+* git init, commit, branch
+* merge vs rebase
+* git flow
+* conflict resolution
 
----
+**Amaliy:**
 
-## **6-hafta: Database (MongoDB + PostgreSQL)**
+* GitHub repo
+* Branch-based development
 
-**Maqsad:** CRUD va database bilan ishlash
-
-* **Kun 1:** MongoDB basics + Go driver
-* **Kun 2:** MongoDB CRUD operations
-* **Kun 3:** PostgreSQL basics + `database/sql`
-* **Kun 4:** GORM ORM
-* **Kun 5:** Relationships, indexes
-* **Kun 6:** Migration & seed data
-* **Kun 7:** Mini project: TodoList with Postgres + MongoDB backup
+👉 **Natija:** real jamoada ishlay oladi
 
 ---
 
-## **7-hafta: File Storage + Caching**
+### **4-hafta — Golang asoslari (CORE)**
 
-**Maqsad:** File upload va caching
+**Mavzular:**
 
-* **Kun 1:** Local file storage
-* **Kun 2:** AWS S3 integration
-* **Kun 3:** Redis basics (set/get)
-* **Kun 4:** Redis expiration, caching strategies
-* **Kun 5:** Memcached basics
-* **Kun 6:** Caching API responses
-* **Kun 7:** Mini project: File upload + cached response
+* syntax, types
+* struct, interface
+* error handling
+* goroutine, channel (intro)
 
----
+**Amaliy:**
 
-## **8-hafta: Highload + Auth**
+* CLI app
+* kichik service yozish
 
-**Maqsad:** Load testing va xavfsiz API
-
-* **Kun 1:** k6 basics
-* **Kun 2:** Load testing REST API
-* **Kun 3:** JWT Auth basics
-* **Kun 4:** OAuth2 basics
-* **Kun 5:** RBAC + token auth
-* **Kun 6:** Protected routes implementation
-* **Kun 7:** Mini project: Auth + highload test
+👉 **Natija:** Go’da mustaqil kod yoza boshlaydi
 
 ---
 
-## **9-hafta: Security + CI/CD**
+## 🟡 **2-OY: BACKEND CORE (5–8-hafta)**
 
-**Maqsad:** Security va avtomatlashtirilgan deploy
+### **5-hafta — Database: PostgreSQL + MongoDB**
 
-* **Kun 1:** HTTPS, TLS basics
-* **Kun 2:** SQL Injection, XSS, CSRF protection
-* **Kun 3:** Secrets management
-* **Kun 4:** GitHub Actions / GitLab CI basics
-* **Kun 5:** Build & test pipelines
-* **Kun 6:** Deploy to staging VPS
-* **Kun 7:** Mini project: Secure Go API + CI/CD
+**Mavzular:**
 
----
+* SQL vs NoSQL
+* schema design
+* indexing
+* transactions
 
-## **10-hafta: Scaling + Messaging**
+**Amaliy:**
 
-**Maqsad:** DB scaling va async messaging
+* Go + PostgreSQL CRUD
+* MongoDB bilan simple service
 
-* **Kun 1:** Database sharding & replication basics
-* **Kun 2:** Connection pooling
-* **Kun 3:** RabbitMQ basics
-* **Kun 4:** RabbitMQ producer/consumer
-* **Kun 5:** Kafka basics
-* **Kun 6:** Kafka producer/consumer
-* **Kun 7:** Mini project: Async message processing service
+👉 **Natija:** DB bilan ishlay oladi
 
 ---
 
-## **11-hafta: Architecture + Containers**
+### **6-hafta — API (REST → gRPC → GraphQL)**
 
-**Maqsad:** Monolith/Microservices + Docker
+**Mavzular:**
 
-* **Kun 1:** Monolith vs Microservices overview
-* **Kun 2:** Microservice design patterns
-* **Kun 3:** ERD + Infra diagram
-* **Kun 4:** Microservice diagram
-* **Kun 5:** Docker basics
-* **Kun 6:** Docker Compose + multi-container app
-* **Kun 7:** Mini project: Containerized microservice app
+* REST best practices
+* gRPC tushunchasi
+* GraphQL nima va qachon
+
+**Amaliy:**
+
+* REST API (Gin)
+* Simple gRPC service
+
+👉 **Natija:** API developer
 
 ---
 
-## **12-hafta: Monitoring, Logging, SDLC**
+### **7-hafta — File Storage + Message Brokers**
 
-**Maqsad:** Monitoring, log tracing va Web deploy
+**Mavzular:**
 
-* **Kun 1:** Prometheus + Grafana basics
-* **Kun 2:** Metrics collection + alert rules
-* **Kun 3:** Loki + Jaeger basics
-* **Kun 4:** Tracing requests
-* **Kun 5:** VPS deploy (NGINX, Go app)
-* **Kun 6:** SDLC best practices
-* **Kun 7:** Final project: Full Go API deployment + monitoring + logging
+* local storage
+* S3 concept
+* RabbitMQ
+* Kafka overview
+
+**Amaliy:**
+
+* File upload service
+* RabbitMQ bilan async task
+
+👉 **Natija:** real backend flow’ni tushunadi
+
+---
+
+### **8-hafta — Architecture**
+
+**Mavzular:**
+
+* Monolith
+* Microservices
+* Event-driven architecture
+* Clean Architecture
+
+**Amaliy:**
+
+* Monolith project structura
+* Event-based flow
+
+👉 **Natija:** “qanday yozish” emas, “nega shunday yozish”ni biladi
+
+---
+
+## 🔵 **3-OY: PROFESSIONAL LEVEL (9–12-hafta)**
+
+### **9-hafta — System Design**
+
+**Mavzular:**
+
+* scalability
+* load balancing
+* caching
+* rate limiting
+
+**Amaliy:**
+
+* Simple system design diagram
+* Redis cache qo‘shish
+
+👉 **Natija:** interview-ready fikrlash
+
+---
+
+### **10-hafta — Design Patterns + Best Practices**
+
+**Mavzular:**
+
+* Singleton, Factory
+* Repository pattern
+* SOLID
+* Clean code
+
+**Amaliy:**
+
+* Pattern’lar bilan refactor
+
+👉 **Natija:** professional kod
+
+---
+
+### **11-hafta — DevOps + Cloud**
+
+**Mavzular:**
+
+* Docker
+* CI/CD
+* Nginx
+* Cloud basics (AWS/GCP)
+
+**Amaliy:**
+
+* Dockerized Go app
+* VPS deploy
+
+👉 **Natija:** “men serverga chiqarib beraman” darajasi
+
+---
+
+### **12-hafta — Testing, Documentation, SDLC**
+
+**Mavzular:**
+
+* Unit & Integration testing
+* Swagger
+* SDLC
+* Team workflow
+
+**Amaliy (FINAL):**
+
+* To‘liq backend loyiha
+* Docs + tests
+* GitHub portfolio
+
+👉 **Natija:** **STRONG JUNIOR GO DEVELOPER** 💥
+
+---
+
+## 🏁 **YAKUNIY HOLAT (12-haftadan keyin):**
+
+✅ Go’da real backend yozadi
+✅ API, DB, Queue, Cache ishlatadi
+✅ Git, Docker, Deploy biladi
+✅ Interview’dan qo‘rqmaydi
+✅ O‘rgatishga ham, ishlashga ham tayyor
 
 ---
 
