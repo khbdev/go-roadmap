@@ -1,242 +1,162 @@
+🚀 **2 OYLIK (8 HAFTA) INTENSIV BACKEND ROADMAP**
 
+**Maqsad:**  
+- Shu jadvaldagi HAMMMA mavzularni "Сможет решить нестандартные задачи" darajasiga chiqarish  
+- 2 oydan keyin technical interview'da oson o‘tasan  
+- Kuchli va samarali backend dasturchi bo‘lib chiqasan  
 
-# 🚀 **3 OYLIK (12 HAFTA) GOLANG BACKEND ROADMAP**
-
-**Maqsad:** Strong Junior Go Developer
-**Format:** Har hafta → bilim + amaliy natija
-
----
-
-## 🟢 **1-OY: ASOS VA FUNDAMENT (1–4-hafta)**
-
-### **1-hafta — OS + Developer muhiti**
-
-**Mavzular:**
-
-* Linux OS asoslari
-* Process, memory, file system
-* CLI, bash basic
-* Env variables
-
-**Amaliy:**
-
-* Linux’da Go o‘rnatish
-* CLI orqali build & run
-* `.env` bilan ishlash
-
-👉 **Natija:** terminaldan qo‘rqmaydigan backendchi
+**Muhim:** Sen hali ko‘p joyini bilmaysan – shuning uchun har hafta **organish + mashq + interview savollariga javob berish** bo‘ladi.  
+Kuniga 6-8 soat vaqt ajrat. Har hafta oxirida o‘zingni test qil.
 
 ---
+### **1-hafta: Asoslarni mustahkamlash (OS + Terminal + Networking)**
+**Nima o‘rganasan:**
+- How Computer & OS works (Folder structure, /etc, /var, /bin, processes, threads)
+- Terminal commands (ps, kill, htop, df, ls, cd, tcpdump, nmap, scp)
+- OSI Model, TCP/UDP, HTTP/HTTPS, FTP, SMTP
 
-### **2-hafta — Networking + Internet asoslari**
+**Amaliyot:**
+- Ubuntu/WSL o‘rnatib, terminalda 30 ta commandani sinab ko‘r
+- curl va tcpdump bilan HTTP requestlarni tutib ko‘r
+- Wireshark o‘rnatib, paketlarni tahlil qil
 
-**Mavzular:**
+**Interview tayyorgarligi:**
+- Har kuni 5 ta savolga javob yoz:  
+  “Process va Thread farqi nima?”  
+  “TCP 3-way handshake qanday ishlaydi?”  
+  “HTTPS qanday shifrlaydi?”
 
-* TCP/IP, HTTP/HTTPS
-* DNS, Ports, Sockets
-* Request/Response flow
-* REST tushunchasi
-
-**Amaliy:**
-
-* Oddiy HTTP server Go’da
-* curl bilan test qilish
-
-👉 **Natija:** backend qanday ishlashini tushunadi
-
----
-
-### **3-hafta — Git (basic → advanced)**
-
-**Mavzular:**
-
-* git init, commit, branch
-* merge vs rebase
-* git flow
-* conflict resolution
-
-**Amaliy:**
-
-* GitHub repo
-* Branch-based development
-
-👉 **Natija:** real jamoada ishlay oladi
+👉 **Natija:** Jadvalning birinchi qismi 100% tugaydi
 
 ---
+### **2-hafta: Git + Go asoslari**
+**Nima o‘rganasan:**
+- Git (init, commit, branch, merge, rebase, stash, submodule, conflict)
+- Go syntax, types (array, map, struct), functions, flow control, operators
+- OOP in Go (interface, method, embedding)
+- Pointers, scope (local/global), pass by value/reference
 
-### **4-hafta — Golang asoslari (CORE)**
+**Amaliyot:**
+- GitHub’da repo ochib, har kuni branch yaratib, rebase va merge qil
+- Go Playground’da 30 ta kichik misol yoz (map, struct, pointer)
 
-**Mavzular:**
+**Interview tayyorgarligi:**
+- “Rebase vs Merge qachon ishlatiladi?”  
+- “Go’da value va reference qanday uzatiladi?”  
+- “Interface nima uchun kerak?”
 
-* syntax, types
-* struct, interface
-* error handling
-* goroutine, channel (intro)
-
-**Amaliy:**
-
-* CLI app
-* kichik service yozish
-
-👉 **Natija:** Go’da mustaqil kod yoza boshlaydi
-
----
-
-## 🟡 **2-OY: BACKEND CORE (5–8-hafta)**
-
-### **5-hafta — Database: PostgreSQL + MongoDB**
-
-**Mavzular:**
-
-* SQL vs NoSQL
-* schema design
-* indexing
-* transactions
-
-**Amaliy:**
-
-* Go + PostgreSQL CRUD
-* MongoDB bilan simple service
-
-👉 **Natija:** DB bilan ishlay oladi
+👉 **Natija:** Git va Go basics to‘liq o‘zlashtirilgan
 
 ---
+### **3-hafta: Go Concurrency + Debugging + SQL asoslari**
+**Nima o‘rganasan:**
+- Goroutines, channels, mutex, sync.WaitGroup, race condition
+- Debugging (delve), pprof (CPU/RAM profiling)
+- SQL: CAP, Normalization (1-3NF), DDL/DML/DQL, Joins, Index, Triggers, Transactions
 
-### **6-hafta — API (REST → gRPC → GraphQL)**
+**Amaliyot:**
+- Go’da 15 ta concurrency task yech (race condition, channel patternlar)
+- PostgreSQL o‘rnatib, 20 ta query yoz (JOIN, INDEX bilan)
+- EXPLAIN bilan query optimizatsiya qil
 
-**Mavzular:**
+**Interview tayyorgarligi:**
+- “Deadlock qanday yuz beradi va qanday oldini olasiz?”  
+- “Index qachon yaratiladi?”  
+- “ACID nima?”
 
-* REST best practices
-* gRPC tushunchasi
-* GraphQL nima va qachon
-
-**Amaliy:**
-
-* REST API (Gin)
-* Simple gRPC service
-
-👉 **Natija:** API developer
-
----
-
-### **7-hafta — File Storage + Message Brokers**
-
-**Mavzular:**
-
-* local storage
-* S3 concept
-* RabbitMQ
-* Kafka overview
-
-**Amaliy:**
-
-* File upload service
-* RabbitMQ bilan async task
-
-👉 **Natija:** real backend flow’ni tushunadi
+👉 **Natija:** Concurrency va SQL asoslari mustahkam
 
 ---
+### **4-hafta: Advanced Database + Redis + File Storage**
+**Nima o‘rganasan:**
+- Replication, Sharding, Denormalization
+- In-Memory stores (Redis): types, cache patterns
+- S3/Minio, CDN, large file upload
 
-### **8-hafta — Architecture**
+**Amaliyot:**
+- Docker’da PostgreSQL master-slave replication qur
+- Redis bilan cache-aside, write-behind patternlar yoz
+- Go’da S3 ga file upload service yoz (multipart upload)
 
-**Mavzular:**
+**Interview tayyorgarligi:**
+- “Sharding qachon kerak?”  
+- “Cache invalidation muammosi qanday yechiladi?”  
+- “Large file qanday samarali yuklanadi?”
 
-* Monolith
-* Microservices
-* Event-driven architecture
-* Clean Architecture
-
-**Amaliy:**
-
-* Monolith project structura
-* Event-based flow
-
-👉 **Natija:** “qanday yozish” emas, “nega shunday yozish”ni biladi
-
----
-
-## 🔵 **3-OY: PROFESSIONAL LEVEL (9–12-hafta)**
-
-### **9-hafta — System Design**
-
-**Mavzular:**
-
-* scalability
-* load balancing
-* caching
-* rate limiting
-
-**Amaliy:**
-
-* Simple system design diagram
-* Redis cache qo‘shish
-
-👉 **Natija:** interview-ready fikrlash
+👉 **Natija:** DB advanced va caching 100%
 
 ---
+### **5-hafta: Message Brokers + API (REST, gRPC, GraphQL)**
+**Nima o‘rganasan:**
+- RabbitMQ va Kafka (producer, consumer, topic, highload)
+- REST best practices (status codes, rate limiting, CORS, Swagger)
+- gRPC (protobuf, unary), GraphQL basics
 
-### **10-hafta — Design Patterns + Best Practices**
+**Amaliyot:**
+- Docker’da RabbitMQ ochib, Go producer/consumer yoz
+- Gin bilan to‘liq REST API qur (rate limit, swagger)
+- Simple gRPC server/client
 
-**Mavzular:**
+**Interview tayyorgarligi:**
+- “Kafka va RabbitMQ farqi?”  
+- “Rate limiting algoritmlari?”  
+- “gRPC qachon REST dan yaxshi?”
 
-* Singleton, Factory
-* Repository pattern
-* SOLID
-* Clean code
-
-**Amaliy:**
-
-* Pattern’lar bilan refactor
-
-👉 **Natija:** professional kod
-
----
-
-### **11-hafta — DevOps + Cloud**
-
-**Mavzular:**
-
-* Docker
-* CI/CD
-* Nginx
-* Cloud basics (AWS/GCP)
-
-**Amaliy:**
-
-* Dockerized Go app
-* VPS deploy
-
-👉 **Natija:** “men serverga chiqarib beraman” darajasi
+👉 **Natija:** API va Message Broker to‘liq
 
 ---
+### **6-hafta: Architecture + System Design + Design Patterns**
+**Nima o‘rganasan:**
+- Monolith vs Microservices vs Event-Driven
+- System Design (scaling, load balancing, unique ID, 12-factor)
+- Design Patterns (Factory, Builder, Singleton, Prototype, Abstract Factory)
 
-### **12-hafta — Testing, Documentation, SDLC**
+**Amaliyot:**
+- 5 ta system design chiz (URL shortener, chat, file storage)
+- Go’da har bir patternni implement qil
 
-**Mavzular:**
+**Interview tayyorgarligi:**
+- “Microservices qanday muammolar keltirib chiqaradi?”  
+- “Singleton Go’da thread-safe qanday qilinadi?”  
+- “Rate limiter design qiling”
 
-* Unit & Integration testing
-* Swagger
-* SDLC
-* Team workflow
-
-**Amaliy (FINAL):**
-
-* To‘liq backend loyiha
-* Docs + tests
-* GitHub portfolio
-
-👉 **Natija:** **STRONG JUNIOR GO DEVELOPER** 💥
-
----
-
-## 🏁 **YAKUNIY HOLAT (12-haftadan keyin):**
-
-✅ Go’da real backend yozadi
-✅ API, DB, Queue, Cache ishlatadi
-✅ Git, Docker, Deploy biladi
-✅ Interview’dan qo‘rqmaydi
-✅ O‘rgatishga ham, ishlashga ham tayyor
+👉 **Natija:** Architecture va Patterns chuqur tushunilgan
 
 ---
+### **7-hafta: DevOps + Testing + Documentation**
+**Nima o‘rganasan:**
+- Docker (Dockerfile, Compose), Cloud basics (DO/AWS)
+- Testing (unit, integration, load testing – k6)
+- Documentation (Swagger, ERD, diagrams)
+
+**Amaliyot:**
+- Loyihani Dockerize qil, compose bilan multi-container qur
+- k6 bilan load test yoz
+- Swagger va diagramlar chiz
+
+**Interview tayyorgarligi:**
+- “Docker qanday ishlaydi?”  
+- “Unit test va Integration test farqi?”  
+- “CI/CD pipeline qanday bo‘ladi?”
+
+👉 **Natija:** Production-ready bilimga ega bo‘lasan
+
+---
+### **8-hafta: Best Practices + FINAL loyiha + Interview tayyorgarligi**
+**Nima o‘rganasan:**
+- SOLID, DRY, KISS, YAGNI
+- SDLC barcha bosqichlari
+- Payment systems overview (PCI DSS, Stripe basics)
+
+**Amaliyot (FINAL):**
+- To‘liq loyiha qur:  
+  REST + gRPC API, PostgreSQL + Redis cache, RabbitMQ, Rate limiting, Docker, Tests, Swagger  
+- Cloudga deploy qil
+
+**Interview tayyorgarligi:**
+- Har kuni 20 ta oldingi mavzulardan savolga javob ber
+- Mock interview o‘tkaz (o‘zingga savol berib, ovoz chiqarib javob ber)
 
 
+
+---
