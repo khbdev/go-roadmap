@@ -1,162 +1,343 @@
-🚀 **2 OYLIK (8 HAFTA) INTENSIV BACKEND ROADMAP**
-
-**Maqsad:**  
-- Shu jadvaldagi HAMMMA mavzularni "Сможет решить нестандартные задачи" darajasiga chiqarish  
-- 2 oydan keyin technical interview'da oson o‘tasan  
-- Kuchli va samarali backend dasturchi bo‘lib chiqasan  
-
-**Muhim:** Sen hali ko‘p joyini bilmaysan – shuning uchun har hafta **organish + mashq + interview savollariga javob berish** bo‘ladi.  
-Kuniga 6-8 soat vaqt ajrat. Har hafta oxirida o‘zingni test qil.
-
----
-### **1-hafta: Asoslarni mustahkamlash (OS + Terminal + Networking)**
-**Nima o‘rganasan:**
-- How Computer & OS works (Folder structure, /etc, /var, /bin, processes, threads)
-- Terminal commands (ps, kill, htop, df, ls, cd, tcpdump, nmap, scp)
-- OSI Model, TCP/UDP, HTTP/HTTPS, FTP, SMTP
-
-**Amaliyot:**
-- Ubuntu/WSL o‘rnatib, terminalda 30 ta commandani sinab ko‘r
-- curl va tcpdump bilan HTTP requestlarni tutib ko‘r
-- Wireshark o‘rnatib, paketlarni tahlil qil
-
-**Interview tayyorgarligi:**
-- Har kuni 5 ta savolga javob yoz:  
-  “Process va Thread farqi nima?”  
-  “TCP 3-way handshake qanday ishlaydi?”  
-  “HTTPS qanday shifrlaydi?”
-
-👉 **Natija:** Jadvalning birinchi qismi 100% tugaydi
-
----
-### **2-hafta: Git + Go asoslari**
-**Nima o‘rganasan:**
-- Git (init, commit, branch, merge, rebase, stash, submodule, conflict)
-- Go syntax, types (array, map, struct), functions, flow control, operators
-- OOP in Go (interface, method, embedding)
-- Pointers, scope (local/global), pass by value/reference
-
-**Amaliyot:**
-- GitHub’da repo ochib, har kuni branch yaratib, rebase va merge qil
-- Go Playground’da 30 ta kichik misol yoz (map, struct, pointer)
-
-**Interview tayyorgarligi:**
-- “Rebase vs Merge qachon ishlatiladi?”  
-- “Go’da value va reference qanday uzatiladi?”  
-- “Interface nima uchun kerak?”
-
-👉 **Natija:** Git va Go basics to‘liq o‘zlashtirilgan
-
----
-### **3-hafta: Go Concurrency + Debugging + SQL asoslari**
-**Nima o‘rganasan:**
-- Goroutines, channels, mutex, sync.WaitGroup, race condition
-- Debugging (delve), pprof (CPU/RAM profiling)
-- SQL: CAP, Normalization (1-3NF), DDL/DML/DQL, Joins, Index, Triggers, Transactions
-
-**Amaliyot:**
-- Go’da 15 ta concurrency task yech (race condition, channel patternlar)
-- PostgreSQL o‘rnatib, 20 ta query yoz (JOIN, INDEX bilan)
-- EXPLAIN bilan query optimizatsiya qil
-
-**Interview tayyorgarligi:**
-- “Deadlock qanday yuz beradi va qanday oldini olasiz?”  
-- “Index qachon yaratiladi?”  
-- “ACID nima?”
-
-👉 **Natija:** Concurrency va SQL asoslari mustahkam
-
----
-### **4-hafta: Advanced Database + Redis + File Storage**
-**Nima o‘rganasan:**
-- Replication, Sharding, Denormalization
-- In-Memory stores (Redis): types, cache patterns
-- S3/Minio, CDN, large file upload
-
-**Amaliyot:**
-- Docker’da PostgreSQL master-slave replication qur
-- Redis bilan cache-aside, write-behind patternlar yoz
-- Go’da S3 ga file upload service yoz (multipart upload)
-
-**Interview tayyorgarligi:**
-- “Sharding qachon kerak?”  
-- “Cache invalidation muammosi qanday yechiladi?”  
-- “Large file qanday samarali yuklanadi?”
-
-👉 **Natija:** DB advanced va caching 100%
-
----
-### **5-hafta: Message Brokers + API (REST, gRPC, GraphQL)**
-**Nima o‘rganasan:**
-- RabbitMQ va Kafka (producer, consumer, topic, highload)
-- REST best practices (status codes, rate limiting, CORS, Swagger)
-- gRPC (protobuf, unary), GraphQL basics
-
-**Amaliyot:**
-- Docker’da RabbitMQ ochib, Go producer/consumer yoz
-- Gin bilan to‘liq REST API qur (rate limit, swagger)
-- Simple gRPC server/client
-
-**Interview tayyorgarligi:**
-- “Kafka va RabbitMQ farqi?”  
-- “Rate limiting algoritmlari?”  
-- “gRPC qachon REST dan yaxshi?”
-
-👉 **Natija:** API va Message Broker to‘liq
-
----
-### **6-hafta: Architecture + System Design + Design Patterns**
-**Nima o‘rganasan:**
-- Monolith vs Microservices vs Event-Driven
-- System Design (scaling, load balancing, unique ID, 12-factor)
-- Design Patterns (Factory, Builder, Singleton, Prototype, Abstract Factory)
-
-**Amaliyot:**
-- 5 ta system design chiz (URL shortener, chat, file storage)
-- Go’da har bir patternni implement qil
-
-**Interview tayyorgarligi:**
-- “Microservices qanday muammolar keltirib chiqaradi?”  
-- “Singleton Go’da thread-safe qanday qilinadi?”  
-- “Rate limiter design qiling”
-
-👉 **Natija:** Architecture va Patterns chuqur tushunilgan
-
----
-### **7-hafta: DevOps + Testing + Documentation**
-**Nima o‘rganasan:**
-- Docker (Dockerfile, Compose), Cloud basics (DO/AWS)
-- Testing (unit, integration, load testing – k6)
-- Documentation (Swagger, ERD, diagrams)
-
-**Amaliyot:**
-- Loyihani Dockerize qil, compose bilan multi-container qur
-- k6 bilan load test yoz
-- Swagger va diagramlar chiz
-
-**Interview tayyorgarligi:**
-- “Docker qanday ishlaydi?”  
-- “Unit test va Integration test farqi?”  
-- “CI/CD pipeline qanday bo‘ladi?”
-
-👉 **Natija:** Production-ready bilimga ega bo‘lasan
-
----
-### **8-hafta: Best Practices + FINAL loyiha + Interview tayyorgarligi**
-**Nima o‘rganasan:**
-- SOLID, DRY, KISS, YAGNI
-- SDLC barcha bosqichlari
-- Payment systems overview (PCI DSS, Stripe basics)
-
-**Amaliyot (FINAL):**
-- To‘liq loyiha qur:  
-  REST + gRPC API, PostgreSQL + Redis cache, RabbitMQ, Rate limiting, Docker, Tests, Swagger  
-- Cloudga deploy qil
-
-**Interview tayyorgarligi:**
-- Har kuni 20 ta oldingi mavzulardan savolga javob ber
-- Mock interview o‘tkaz (o‘zingga savol berib, ovoz chiqarib javob ber)
-
+📅 2 OYLIK (8 HAFTA) ROADMAP
 
 
 ---
+
+## **1-HAFTA — GO CORE & CONCURRENCY (RECALL + NEW)**
+
+**Maqsad:** Go’ni **ishlataman** emas, **tushunaman + advanced**
+
+### Avval o‘rganilgan + yangilanish:
+
+- Goroutines & scheduler
+    
+- Channel internals
+    
+- Context (`context.Context`)
+    
+- Race conditions + data races
+    
+- Pointers & memory model
+    
+- Stack vs Heap, escape analysis
+    
+- Garbage Collector
+    
+- Graceful shutdown
+    
+
+### Mini-project:
+
+- **Parallel Worker Pool**: RabbitMQ consumer simulator
+    
+- **Context & timeout**: HTTP request with cancellation
+    
+
+---
+
+## **2-HAFTA — DATABASE SYSTEMS (RECALL + NEW)**
+
+**Maqsad:** DB bilan ishlashda **design + performance**
+
+### SQL (MySQL / PostgreSQL)
+
+- Schema design, normalization/denormalization
+    
+- Indexing (B-Tree, Hash)
+    
+- Query planner, EXPLAIN
+    
+- JOIN types
+    
+- Transaction + isolation level + deadlock
+    
+- Migration strategy, versioning
+    
+
+### NoSQL (MongoDB)
+
+- Document modeling, embedding vs referencing
+    
+- Aggregation pipeline
+    
+- Indexing & performance
+    
+
+### Redis
+
+- Cache-aside pattern
+    
+- TTL & expiration
+    
+- Rate limiting
+    
+- Distributed lock
+    
+- Pub/Sub
+    
+
+### File Storage
+
+- Local vs Object (S3-style)
+    
+- Streaming upload/download
+    
+- Signed URLs / pre-signed links
+    
+
+### Mini-projectlar:
+
+1. SQL + Mongo hybrid service
+    
+2. Redis caching + rate limiter
+    
+3. File upload service (local & Redis key mapping)
+    
+
+---
+
+## **3-HAFTA — MESSAGE BROKERS & ASYNC SYSTEMS (NEW + RECALL)**
+
+**Maqsad:** Systemni **non-blocking, high-load capable** qilish
+
+### RabbitMQ
+
+- Exchanges (direct, topic, fanout)
+    
+- Routing keys
+    
+- Ack/Nack, retry
+    
+- Dead letter queues
+    
+- Idempotency patterns
+    
+
+### Kafka
+
+- Topic / partition / consumer group
+    
+- Offset management
+    
+- Delivery semantics (at-least-once, exactly-once)
+    
+- Event ordering
+    
+
+### Mini-projectlar:
+
+1. Email notification queue
+    
+2. Event-driven user activity log (Kafka)
+    
+3. Background worker pool with retries
+    
+
+---
+
+## **4-HAFTA — API & COMMUNICATION PROTOCOLS (RECALL + NEW)**
+
+**Maqsad:** API’larni **industry standard** asosida qurish
+
+### REST API
+
+- Versioning, filtering, pagination
+    
+- Error standard, idempotency
+    
+- Validation middleware
+    
+
+### gRPC
+
+- Unary / streaming RPC
+    
+- Proto design
+    
+- Interceptors
+    
+- Error codes
+    
+
+### GraphQL
+
+- Schema design
+    
+- Resolver, caching, N+1 problem
+    
+
+### API Gateway
+
+- Auth, JWT verification
+    
+- Rate limiting
+    
+- Request aggregation
+    
+
+### Mini-projectlar:
+
+1. REST CRUD service
+    
+2. gRPC UserService + Gateway
+    
+3. GraphQL Product API
+    
+4. Gateway routing + rate limit
+    
+
+---
+
+## **5-HAFTA — ARCHITECTURE & SYSTEM DESIGN (RECALL + NEW)**
+
+**Maqsad:** Qaysi joyda qaysi arxitektura kerakligini bilish
+
+### Architecture Patterns
+
+- Monolith / Modular Monolith
+    
+- Microservices
+    
+- Event-driven architecture
+    
+
+### System Design
+
+- Scalability / Availability / Consistency
+    
+- CAP theorem
+    
+- Caching strategy
+    
+- Saga / Choreography
+    
+- Service isolation + failure handling
+    
+
+### Mini-projectlar:
+
+1. Monolith → microservices refactor
+    
+2. Event-driven order processing system
+    
+3. Cache layer + fallback
+    
+
+---
+
+## **6-HAFTA — DESIGN PATTERNS & CLEAN CODE (RECALL + NEW)**
+
+**Maqsad:** Kodni **expandable + readable + maintainable** qilish
+
+### Design Patterns
+
+- Factory / Strategy / Adapter / Observer
+    
+- Repository / Decorator / Circuit Breaker
+    
+
+### Clean Code
+
+- SOLID principles
+    
+- Dependency Injection
+    
+- Layered Architecture vs Clean Architecture
+    
+- Anti-patternlar
+    
+
+### Mini-projectlar:
+
+1. Service using Repository + Factory
+    
+2. Adapter example: external API integration
+    
+3. Logging middleware + centralized error
+    
+
+---
+
+## **7-HAFTA — TESTING & BEST PRACTICES (RECALL + NEW)**
+
+**Maqsad:** Productionga **ishonch bilan chiqarish + resilient code**
+
+### Testing
+
+- Unit test
+    
+- Table-driven test
+    
+- Mocking
+    
+- Integration test
+    
+- Benchmarking
+    
+
+### Best Practices
+
+- Logging / Error handling / Retry & backoff
+    
+- Graceful shutdown / Health check
+    
+- Config management / Secrets
+    
+
+### SDLC
+
+- Requirement → Design → Develop → Test → Deploy → Monitor
+    
+
+### Mini-projectlar:
+
+1. Full test coverage REST + gRPC service
+    
+2. Retry + backoff simulation
+    
+3. Health check + graceful shutdown
+    
+
+---
+
+## **8-HAFTA — DEVOPS, CLOUD & FINAL SYSTEM (NEW)**
+
+**Maqsad:** **End-to-End Go Engineer**
+
+### DevOps
+
+- Docker (multi-stage build)
+    
+- docker-compose
+    
+- CI/CD (GitHub Actions / GitLab CI)
+    
+
+### Cloud & Infrastructure
+
+- VPS / Nginx / SSL
+    
+- Reverse proxy
+    
+- Env & secrets management
+    
+- Basic monitoring (metrics, logs)
+    
+
+### Final Project
+
+- Production-grade Go system:
+    
+    - API Gateway
+        
+    - Auth
+        
+    - DB + Cache + Queue
+        
+    - Worker services
+        
+    - Monitoring + CI/CD
+        
+
+---
+
