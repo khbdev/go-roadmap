@@ -130,20 +130,25 @@
 
 ---
 
-### ✅ 4-Hafta: MySQL + ORM + Relationship
+
+
+
+### ✅ 4-Hafta: PostgreSQL + ORM + Relationship
 
 **Nazariya:**
 
-* SQL asoslari: SELECT, INSERT, UPDATE, DELETE
-* MySQL + Go (`gorm.io/gorm`)
+* SQL asoslari: `SELECT`, `INSERT`, `UPDATE`, `DELETE`
+* PostgreSQL + Go (`gorm.io/gorm` + `gorm.io/driver/postgres`)
 * One-to-One, One-to-Many, Many-to-Many
-* JOIN, foreign key, migrate qilish
-* SQL injectiondan himoyalanish
+* `JOIN`, foreign key, migrate qilish
+* SQL injectiondan himoyalanish (`gorm` avtomatik parametrize qilishi bilan)
 
 **Amaliyot:**
 
-* User, Post, Comment CRUD (MySQL bilan)
-* User-Post (1\:M), Post-Tag (M\:M) relation
+* `User`, `Post`, `Comment` CRUD (PostgreSQL bilan)
+* `User-Post` (1:M), `Post-Tag` (M:M) relation
+* PostgreSQL’da `serial`, `uuid` yoki `bigserial` ishlatish
+* `ON DELETE CASCADE`, `ON UPDATE CASCADE` foreign key opsiyalari bilan relation yaratish
 
 ---
 
