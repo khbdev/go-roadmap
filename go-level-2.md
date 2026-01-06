@@ -1,104 +1,107 @@
 📅 2 OYLIK (8 HAFTA) ROADMAP
 
 
----
-
-## **1-HAFTA — GO CORE & CONCURRENCY (RECALL + NEW)**
-
-**Maqsad:** Go’ni **ishlataman** emas, **tushunaman + advanced**
-
-### Avval o‘rganilgan + yangilanish:
-
-- Goroutines & scheduler
-    
-- Channel internals
-    
-- Context (`context.Context`)
-    
-- Race conditions + data races
-    
-- Pointers & memory model
-    
-- Stack vs Heap, escape analysis
-    
-- Garbage Collector
-    
-- Graceful shutdown
-    
-
-### Mini-project:
-
-- **Parallel Worker Pool**: RabbitMQ consumer simulator
-    
-- **Context & timeout**: HTTP request with cancellation
-    
 
 ---
 
-## **2-HAFTA — DATABASE SYSTEMS (RECALL + NEW)**
+## **1-HAFTA — Concurrency + Testing Basics**
 
-**Maqsad:** DB bilan ishlashda **design + performance**
+**Maqsad:** Goroutine va channel asoslarini tushunish, parallelism va testing bilan tanishish
 
-### SQL (MySQL / PostgreSQL)
+### Nazariya
+	
+- `go func() {...}()` sintaksisi
+    
+- Goroutine yengilligi
+    
+- Channel (buffered/unbuffered), send/receive bloklanish, close semantics
+    
+- Select + timeout
+    
+- Fan-in / Fan-out pattern
+    
+- `sync.Mutex` va `WaitGroup`
+    
+- Race condition oddiy misollar
+    
+- Table-driven test va benchmark konseptlari
+    
 
-- Schema design, normalization/denormalization
+### Amaliy
+
+- Parallel fayl o‘qish (goroutine + WaitGroup + channel)
     
-- Indexing (B-Tree, Hash)
+- Buffered vs unbuffered channel test
     
-- Query planner, EXPLAIN
+- JSON parser + table-driven test
     
-- JOIN types
+- Benchmarking `testing.B`
     
-- Transaction + isolation level + deadlock
+- Oddiy fan-out/fan-in worker pool
     
-- Migration strategy, versioning
+- Select + timeout misoli (goroutine cancel)
+    
+
+---
+
+## **2-HAFTA — Database Systems (SQL / NoSQL / Redis / File Storage)**
+
+**Maqsad:** Database bilan ishlash va basic caching
+
+### SQL (PostgreSQL)
+
+- CRUD + simple JOIN
+    
+- Primary key, foreign key
+    
+- Transaction basics + commit/rollback
+    
+- Mini-task: Go + SQL CRUD API
     
 
 ### NoSQL (MongoDB)
 
-- Document modeling, embedding vs referencing
+- Document modeling
     
-- Aggregation pipeline
+- Embedding vs referencing
     
-- Indexing & performance
+- CRUD API bilan amaliy mashqlar
     
 
 ### Redis
 
 - Cache-aside pattern
     
-- TTL & expiration
+- TTL / expire
     
-- Rate limiting
+- Simple rate limiter
     
-- Distributed lock
-    
-- Pub/Sub
+- Pub/Sub overview
     
 
 ### File Storage
 
-- Local vs Object (S3-style)
+- Local vs Object storage
     
-- Streaming upload/download
+- Upload / download
     
-- Signed URLs / pre-signed links
+- Redis mapping for file paths
     
 
-### Mini-projectlar:
+### Mini-projectlar
 
 1. SQL + Mongo hybrid service
     
 2. Redis caching + rate limiter
     
-3. File upload service (local & Redis key mapping)
+3. File upload service (local + Redis key mapping)
     
 
 ---
 
-## **3-HAFTA — MESSAGE BROKERS & ASYNC SYSTEMS (NEW + RECALL)**
+## **3-HAFTA — Message Brokers & Async Systems**
 
-**Maqsad:** Systemni **non-blocking, high-load capable** qilish
+**Maqsad:** Non-blocking, high-load capable system yaratish
 
 ### RabbitMQ
 
@@ -106,7 +109,7 @@
     
 - Routing keys
     
-- Ack/Nack, retry
+- Ack/Nack + retry
     
 - Dead letter queues
     
@@ -124,7 +127,7 @@
 - Event ordering
     
 
-### Mini-projectlar:
+### Mini-projectlar
 
 1. Email notification queue
     
@@ -135,9 +138,9 @@
 
 ---
 
-## **4-HAFTA — API & COMMUNICATION PROTOCOLS (RECALL + NEW)**
+## **4-HAFTA — API & Communication Protocols**
 
-**Maqsad:** API’larni **industry standard** asosida qurish
+**Maqsad:** Industry standard API’larni ishlab chiqish
 
 ### REST API
 
@@ -175,7 +178,7 @@
 - Request aggregation
     
 
-### Mini-projectlar:
+### Mini-projectlar
 
 1. REST CRUD service
     
@@ -188,9 +191,9 @@
 
 ---
 
-## **5-HAFTA — ARCHITECTURE & SYSTEM DESIGN (RECALL + NEW)**
+## **5-HAFTA — Architecture & System Design**
 
-**Maqsad:** Qaysi joyda qaysi arxitektura kerakligini bilish
+**Maqsad:** Qaysi arxitektura qayerda ishlatishni bilish
 
 ### Architecture Patterns
 
@@ -214,7 +217,7 @@
 - Service isolation + failure handling
     
 
-### Mini-projectlar:
+### Mini-projectlar
 
 1. Monolith → microservices refactor
     
@@ -225,9 +228,9 @@
 
 ---
 
-## **6-HAFTA — DESIGN PATTERNS & CLEAN CODE (RECALL + NEW)**
+## **6-HAFTA — Design Patterns & Clean Code**
 
-**Maqsad:** Kodni **expandable + readable + maintainable** qilish
+**Maqsad:** Kodni expandable, readable va maintainable qilish
 
 ### Design Patterns
 
@@ -242,12 +245,12 @@
     
 - Dependency Injection
     
-- Layered Architecture vs Clean Architecture
+- Layered vs Clean Architecture
     
 - Anti-patternlar
     
 
-### Mini-projectlar:
+### Mini-projectlar
 
 1. Service using Repository + Factory
     
@@ -258,15 +261,13 @@
 
 ---
 
-## **7-HAFTA — TESTING & BEST PRACTICES (RECALL + NEW)**
+## **7-HAFTA — Testing & Best Practices**
 
-**Maqsad:** Productionga **ishonch bilan chiqarish + resilient code**
+**Maqsad:** Production-ready, resilient code
 
 ### Testing
 
-- Unit test
-    
-- Table-driven test
+- Unit test / Table-driven test
     
 - Mocking
     
@@ -289,7 +290,7 @@
 - Requirement → Design → Develop → Test → Deploy → Monitor
     
 
-### Mini-projectlar:
+### Mini-projectlar
 
 1. Full test coverage REST + gRPC service
     
@@ -300,9 +301,9 @@
 
 ---
 
-## **8-HAFTA — DEVOPS, CLOUD & FINAL SYSTEM (NEW)**
+## **8-HAFTA — DevOps, Cloud & Final System**
 
-**Maqsad:** **End-to-End Go Engineer**
+**Maqsad:** End-to-End Go Engineer
 
 ### DevOps
 
@@ -340,4 +341,3 @@
         
 
 ---
-
