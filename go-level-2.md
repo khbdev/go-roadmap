@@ -1,7 +1,6 @@
 📅 2 OYLIK (8 HAFTA) ROADMAP
 
 
-
 ---
 
 ## **1-HAFTA — Concurrency + Testing Basics**
@@ -21,21 +20,11 @@
 - Fan-in / Fan-out pattern
     
 - `sync.Mutex` va `WaitGroup`
-    
-- Race condition oddiy misollar
-    
-- Table-driven test va benchmark konseptlari
-    
-
 ### Amaliy
 
 - Parallel fayl o‘qish (goroutine + WaitGroup + channel)
     
 - Buffered vs unbuffered channel test
-    
-- JSON parser + table-driven test
-    
-- Benchmarking `testing.B`
     
 - Oddiy fan-out/fan-in worker pool
     
