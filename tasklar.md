@@ -1,68 +1,150 @@
 
 
-# **4-haftalik Go Intensive Roadmap — Mustaqil Dasturchi uchun**
+# 🧭 1 OYLIK GO REAL CODING ROADMAP
+---
 
-## **1-hafta — Go Syntax, Variables, Control Flow, Functions**
+## 🟢 1-HAFTA — GO ASOSIY FIKRLASH
 
-**Maqsad:** Go’ning barcha asosiy sintaksis va dasturlash qoidalarini o‘zlashtirish
+**Bu haftada:**
+👉 Go sintaksisini emas, **muammoni Go’da yechishni** o‘rganasan
 
-| Kun | Mavzu                                               | Amaliy                                                     | Tekshiruv / Natija                   |
-| --- | --------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------ |
-| 1   | Hello World, package main, func main(), go mod init | Hello World chop et, modul yarat, argument bilan print     | `go run main.go` → “Salom, Azizbek!” |
-| 2   | Variables, types, constants                         | int, float, string, bool; 5 o‘zgaruvchi chop et            | Qiymatlar va tiplar to‘g‘ri chiqishi |
-| 3   | If, Else, Switch                                    | Son musbat/manfiy/0 tekshiruvchi kod; hafta kuni chiqarish | Input 3 → “Chorshanba”               |
-| 4   | For loop, Arrays                                    | 1-10 sonni chop etish, array → slice                       | 1..10 sonlar ketma-ket chop etilishi |
-| 5   | Slice operations                                    | append, slicing, remove, copy                              | Elementlar kutilgan tartibda         |
-| 6   | Map                                                 | map[string]int, existence check                            | “hello” → h:1 e:1 l:2 o:1            |
-| 7   | Functions                                           | func, multiple returns, defer                              | SumAndDiff(5,3) → 8,2                |
+### Nimalarni bilishing kerak
+
+* `struct`, `interface`
+* `slice` va `map`
+* `pointer` qachon kerak
+* `error` bilan ishlash
+* kichik funksiyalar yozish
+
+### Har kungi ish
+
+* 3–5 ta kichik masala
+* hammasini **o‘zing yozasan**
+* tayyor kod ko‘chirma
+
+### Hafta oxiri natija
+
+✅ Fayl o‘qiy olasan
+✅ JSON bilan ishlay olasan
+✅ Oddiy CLI dastur yozasan
+
+📌 **Mini loyiha:**
+`user-manager`
+– user qo‘shish
+– o‘chirish
+– list
+– file’da saqlash
 
 ---
 
-## **2-hafta — Structs, Methods, Packages, File I/O, Error Handling**
+## 🟡 2-HAFTA — BACKENDNI HIS QILISH
 
-**Maqsad:** OOP, modular kod, file va error handling
+**Bu haftada:**
+👉 “API qanday ishlaydi?” degan savol yo‘qoladi
 
-| Kun | Mavzu                              | Amaliy                                           | Tekshiruv / Natija                   |
-| --- | ---------------------------------- | ------------------------------------------------ | ------------------------------------ |
-| 8   | Struct                             | User struct yaratish, chop etish                 | User First/Last/Age to‘g‘ri chiqishi |
-| 9   | Methods (value & pointer receiver) | FullName() & Birthday()                          | Birthday chaqirilgach Age oshishi    |
-| 10  | Nested structs, Slice of structs   | 3 user slice, Address struct qo‘shish            | Barcha userlar chiqarilishi          |
-| 11  | Package yaratish                   | mathutils: Add, Sub, test yozish                 | main.go dan import qilganda ishlash  |
-| 12  | Multiple files, project structure  | utils.go, store.go, main.go bilan CLI app        | `go run .` → buyruqlar ishlaydi      |
-| 13  | File I/O basics                    | users slice → JSON → faylga yozish, qayta o‘qish | Fayl to‘g‘ri JSON, struct tiklanishi |
-| 14  | Error handling                     | error type, if err != nil                        | Noto‘g‘ri path → xato chiqishi       |
+### Nimalarni qilasan
+
+* HTTP server yozish
+* request / response tushunish
+* status code
+* validation
+* database bilan ishlash
+
+### O‘rganiladigan narsalar
+
+* `net/http` yoki `gin`
+* `database/sql`
+* password hash
+* oddiy auth
+
+### Hafta oxiri natija
+
+✅ CRUD API yozasan
+✅ DB bilan ishlay olasan
+✅ Login / register qilasan
+
+📌 **Mini loyiha:**
+`task-api`
+– user
+– task
+– auth
+– SQL
+
+---
+
+## 🔵 3-HAFTA — MIDDLE DARAJAGA O‘TISH
+
+**Bu haftada:**
+👉 Go’ning kuchli joyini his qilasan
+
+### Nimalarni o‘rganasan
+
+* `goroutine`
+* `channel`
+* `WaitGroup`
+* `mutex`
+* parallel ishlash
+
+### Real masalalar
+
+* bir nechta ishni bir vaqtda bajarish
+* race condition
+* worker pool
+
+### Hafta oxiri natija
+
+✅ Parallel kod yozasan
+✅ Qachon mutex, qachon channel bilasan
+
+📌 **Mini loyiha:**
+`log-processor`
+– file o‘qiydi
+– parallel parse
+– statistikani chiqaradi
 
 ---
 
-## **3-hafta — Concurrency (Goroutines, Channels, Select, Fan-in/Out)**
+## 🔴 4-HAFTA — REAL CODING TASKLAR
 
-**Maqsad:** Go’ning parallel ishlash qudratini o‘rganish
+**Bu haftada:**
+👉 “Mana task, 2 soat” — sen yozasan
 
-| Kun | Mavzu                       | Amaliy                                       | Tekshiruv / Natija                                    |
-| --- | --------------------------- | -------------------------------------------- | ----------------------------------------------------- |
-| 15  | Goroutines basics           | 10 goroutine yaratib, 1s kutib print         | Hammasi tugashi va ketma-ket chiqishi                 |
-| 16  | WaitGroup & Mutex           | 100 goroutine counter++; mutex bilan xavfsiz | Oxirgi counter to‘g‘ri chiqishi                       |
-| 17  | Channels (unbuffered)       | producer → channel → consumer                | Consumer barcha qiymatlarni oladi                     |
-| 18  | Buffered channels & closing | make(chan int,5), close(ch)                  | Range bilan barcha qiymatlar o‘qilishi, deadlock yo‘q |
-| 19  | Select + timeout            | 2 channel + time.After                       | Maʼlumot kelmasa timeout ishlaydi                     |
-| 20  | Fan-in/Fan-out              | 3 producer, 1 consumer aggregator            | Aggregator barcha 15 itemni oladi                     |
-| 21  | Mini concurrency project    | Parallel URL pinger yoki task runner         | Barcha tasklar bajarilgan va natija to‘g‘ri           |
+### Real tasklar
+
+* URL shortener
+* Rate limiter
+* In-memory queue
+* Worker system
+
+### Bu bosqichda
+
+* Googleda faqat **docs**
+* AI yo‘q
+* copy-paste yo‘q
+
+### Yakuniy loyiha
+
+📌 `arena-core`
+
+Ichida:
+
+* REST API
+* Auth
+* DB
+* Concurrency
+* Config
+* Logger
 
 ---
 
-## **4-hafta — HTTP, API, Database, Yakuniy Mini Loyiha**
+## 🧠 ENG MUHIM QOIDALAR
 
-**Maqsad:** Backend va full-stack Go mustaqil loyiha
-
-| Kun | Mavzu                      | Amaliy                                                   | Tekshiruv / Natija                         |
-| --- | -------------------------- | -------------------------------------------------------- | ------------------------------------------ |
-| 22  | HTTP basics                | /hello, /ping JSON                                       | curl localhost:8080/ping → `{status:"ok"}` |
-| 23  | POST endpoint + JSON       | /sum POST: {"a":2,"b":3} → {"sum":5}                     | JSON natija to‘g‘ri                        |
-| 24  | URL params & router        | /user?id=2                                               | In-memory user JSON qaytadi                |
-| 25  | Database/sql introduction  | SQLite/MySQL, `sql.Open`                                 | DB ochilishi va INSERT/SELECT ishlashi     |
-| 26  | CRUD endpoints             | POST/GET/PUT/DELETE users                                | CRUD endpointlar ishlaydi                  |
-| 27  | Background tasks & testing | Goroutine reminder + unit tests                          | Background ishlaydi, tests muvaffaqiyatli  |
-| 28  | Yakuniy mini-loyiha        | Todo API (HTTP + DB + concurrency + file backup + tests) | Barcha endpointlar ishlashi, tests o‘tishi |
+❌ tutorial ko‘rib ketma-ket yozma
+❌ “perfect code” deb o‘ylama
+✅ ishlaydigan kod yoz
+✅ xato qil
+✅ xatoni tushun
 
 ---
+
 
