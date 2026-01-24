@@ -1,7 +1,7 @@
 # 🧠 1 OYLIK MATEMATIKA FUNDAMENTAL (4 HAFTA)
 
 📅 **26-yanvar → 28-fevral**
-⏱ **Kuniga 3 soat (nazariya + amaliyot)**
+⏱ **Kuniga 2 soat (nazariya + amaliyot)**
 🎯 **Maqsad:** Matematikadan “qo‘rqmaydigan”, mustahkam asos
 
 ---
