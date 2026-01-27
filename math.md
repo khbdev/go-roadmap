@@ -1,68 +1,149 @@
 
 
-# 🧠 1 OYLIK MATEMATIKA FUNDAMENTAL (DSA READY VERSION)
+# 🧠 DSA uchun Matematika Roadmap
 
-📅 **26-yanvar → 28-fevral**
-⏱ **Kuniga 2 soat**
-🎯 **Maqsad:** DSAga tayyor matematika – sonlar, algebra, kombinatorika, probability, logika
-
----
-
-## 🔹 1-HAFTA — SONLAR, ARIFMETIKA, MODULO
-
-* Natural sonlar, manfiy sonlar, 0
-* Sonlarni taqqoslash, yaxlitlash
-* Qo‘shish / ayirish / ko‘paytirish / bo‘lish
-* Qoldiqli bo‘lish (**modulo**)
-* Kvadrat, kub, daraja
-* Bo‘linuvchanlik qoidalari, oddiy prime test
-* EKUB, EKUK boshlang‘ich tushunchasi
-* Oddiy masalalar: summalar, farqlar, ketma-ket sonlar
-* **DSA tayyorligi:** modulodagi amallarni bilish – array va loop masalalarini yechish uchun
+**📅 62 kun (31 + 31)**
+**⏱ Kuniga: 2 soat**
 
 ---
 
-## 🔹 2-HAFTA — KASRLAR, FOIZ, PROPORTION
+## 🔹 1–10 KUN — ARIFMETIKA & MANTIQ
 
-* Oddiy kasrlar, aralash sonlar, to‘g‘ri / noto‘g‘ri
-* Kasrlarni soddalashtirish, qo‘shish, ayirish, ko‘paytirish, bo‘lish
-* O‘nlik kasrlar bilan amallar
-* Foiz, nisbat, proporsiya
-* Oddiy masalalar: xarajat, growth, discounts
-* **DSA tayyorligi:** weights, probability, ratio masalalar uchun tayyor bo‘lish
+**Maqsad:** kod ichidagi hisoblashdan qo‘rqmaslik
 
----
+**Mavzular:**
 
-## 🔹 3-HAFTA — ALGEBRA FUNDAMENTALI
+* * − × ÷
+* `%` (modulo) → juda muhim
+* Even / Odd
+* Absolute value
+* Overflow nima
 
-* Algebraik ifodalar: birhad, ko‘phad, o‘xshash hadlar
-* Qavslarni ochish, distributivlik
-* Chiziqli tenglamalar, kasr koeffitsiyentli tenglamalar
-* Ikki o‘zgaruvchi tenglamalar (system of equations)
-* Oddiy kvadrat tenglamalar (x² + bx + c = 0)
-* Tengsizliklar, funksiya tushunchasi, oddiy grafik
-* **DSA tayyorligi:** variables bilan ifodalarni yechish, formulasini soddalashtirish, equation masalalari
+**DSA bog‘lanishi:**
 
----
+* Loop ichida count
+* Index bilan ishlash
+* LeetCode Easy
 
-## 🔹 4-HAFTA — POWER, FACTORIAL, COMBINATORICS, LOGIKA
-
-* Darajalar, kvadrat ildiz, ildizli ifodalar
-* Juft/toq sonlar, bo‘linish, prime numbers
-* EKUB / EKUK
-* Factorial (n!)
-* Oddiy kombinatorika: permutation, combination
-* Oddiy probability masalalari
-* Oddiy pattern & logic masalalar (if-else, loops uchun)
-* **DSA tayyorligi:** factorial, combination, probability, loop patternlar
+📌 5–10 ta oddiy masala kuniga
 
 ---
 
-📌 **Natija:**
+## 🔹 11–20 KUN — ALGEBRA BASIC (DSA uchun)
 
-1. Sonlar va arifmetika bilan bog‘liq array / loop / modulo masalalarini yechish qiyinchiliksiz bo‘ladi
-2. Kasr, foiz, proporsiyalarni ratio/probability masalalarida ishlata olasan
-3. Algebraik ifodalar va tenglamalarni soddalashtirish, chiziqli/kvadrat masalalarni yechish qobiliyati DSA formulalarini tushunishga yordam beradi
-4. Factorial, EKUB/EKUK, combination/permutation bilan bog‘liq masalalarni yechish oson bo‘ladi
+**Maqsad:** formulani ko‘rib tushunish
+
+**Mavzular:**
+
+* `n`, `n+1`, `2n` degani
+* O‘zgaruvchi tushunchasi
+* Oddiy tenglamalar
+* Sum formulasi:
+  `1 + 2 + ... + n`
+
+**DSA bog‘lanishi:**
+
+* Prefix sum
+* Range sum
+* Array hisoblash
+
+---
+
+## 🔹 21–30 KUN — TIME COMPLEXITY & BIG O
+
+**Maqsad:** intervyuda to‘g‘ri gapirish
+
+**Mavzular:**
+
+* O(1), O(n), O(n²), O(log n)
+* Looplar tahlili
+* Nested loop
+
+**DSA bog‘lanishi:**
+
+* Qaysi yechim tezroq
+* Binary search nima uchun tez
+
+📌 Kuniga 2–3 masalani complexity bilan tahlil qil
+
+---
+
+## 🔹 31–40 KUN — COUNTING & COMBINATORICS BASIC
+
+**Maqsad:** sanashni tushunish
+
+**Mavzular:**
+
+* Counting principles
+* Necha xil yo‘l
+* Permutation vs Combination (formula emas, g‘oya)
+
+**DSA bog‘lanishi:**
+
+* Subset masalalar
+* Backtracking tushunchasi
+
+---
+
+## 🔹 41–50 KUN — LOGARIFM & BINARY THINKING
+
+**Maqsad:** `log n` ni his qilish
+
+**Mavzular:**
+
+* Logarifm nima (intuitiv)
+* Binary search ishlashi
+* Binary representation
+
+**DSA bog‘lanishi:**
+
+* Divide & conquer
+* Tree depth
+
+📌 Bit manipulation boshlanishi
+
+---
+
+## 🔹 51–62 KUN — CONSOLIDATION (MUSTAHKAMLASH)
+
+**Maqsad:** bilimni “avtomatik” qilish
+
+**Qilasan:**
+
+* Oldingi barcha mavzularni takrorlash
+* Har kuni 5–7 ta DSA masala
+* Har masalada:
+
+  * qaysi matematika ishladi
+  * Big O aytib berish
+
+📌 80% vaqt — masala
+
+---
+
+## ⏱ KUNLIK FORMAT (MUHIM):
+
+* 30 min — math tushuncha
+* 60 min — DSA masala
+* 30 min — tahlil / yozib tushuntirish
+
+---
+
+## ❌ QATTIQ TAQIQLANADI:
+
+* Geometriya
+* Isbotlar
+* Trigonometriya
+* Olimpiada masalalari
+
+---
+
+## 🎯 62 KUNDAN KEYIN:
+
+* DSA uchun matematika **yetarli**
+* LeetCode Easy–Mediumga tayyor
+* Iyun–Iyul DSA bosqichi **osonlashadi**
+
+---
 
 
