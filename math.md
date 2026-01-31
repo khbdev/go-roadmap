@@ -1,149 +1,167 @@
 
 
-# 🧠 DSA uchun Matematika Roadmap
+# ✅ 2 OYLIK FAFAQAT MATEMATIKA ROADMAP
 
-**📅 62 kun (31 + 31)**
-**⏱ Kuniga: 2 soat**
+🎯 **Maqsad:**
+DSA boshlaganda:
 
----
-
-## 🔹 1–10 KUN — ARIFMETIKA & MANTIQ
-
-**Maqsad:** kod ichidagi hisoblashdan qo‘rqmaslik
-
-**Mavzular:**
-
-* * − × ÷
-* `%` (modulo) → juda muhim
-* Even / Odd
-* Absolute value
-* Overflow nima
-
-**DSA bog‘lanishi:**
-
-* Loop ichida count
-* Index bilan ishlash
-* LeetCode Easy
-
-📌 5–10 ta oddiy masala kuniga
+* “bu nimasi?” demaysan
+* mantiq, sanash, ehtimol, graph degan joyda **to‘xtab qolmaysan**
 
 ---
 
-## 🔹 11–20 KUN — ALGEBRA BASIC (DSA uchun)
+## 🔴 MUHIM HAQIQAT (ISHONCH UCHUN)
 
-**Maqsad:** formulani ko‘rib tushunish
+DSA’da **hisoblash emas**, **fikrlash** ishlaydi.
+Shuning uchun:
 
-**Mavzular:**
-
-* `n`, `n+1`, `2n` degani
-* O‘zgaruvchi tushunchasi
-* Oddiy tenglamalar
-* Sum formulasi:
-  `1 + 2 + ... + n`
-
-**DSA bog‘lanishi:**
-
-* Prefix sum
-* Range sum
-* Array hisoblash
+* ko‘paytirishni bilmaslik → MUAMMO EMAS
+* formulani yod bilmaslik → MUAMMO EMAS
 
 ---
 
-## 🔹 21–30 KUN — TIME COMPLEXITY & BIG O
+# 📅 1-OY — ASOSIY FIKRLASH MATEMATIKASI
 
-**Maqsad:** intervyuda to‘g‘ri gapirish
+## 🟢 1-HAFTA: MANTIQ (LOGIC)
 
-**Mavzular:**
+👉 DSA’dagi **if, while, condition** asosidir
 
-* O(1), O(n), O(n²), O(log n)
-* Looplar tahlili
-* Nested loop
+**O‘rganasan:**
 
-**DSA bog‘lanishi:**
+* True / False
+* AND, OR, NOT
+* “agar A bo‘lsa, B bo‘ladi”
+* qarama-qarshi fikr
 
-* Qaysi yechim tezroq
-* Binary search nima uchun tez
+**Mashq (hisobsiz):**
 
-📌 Kuniga 2–3 masalani complexity bilan tahlil qil
+* mantiqiy gaplarni tahlil qilish
+* to‘g‘ri / noto‘g‘rini ajratish
+* logic puzzles (oddiy)
 
----
-
-## 🔹 31–40 KUN — COUNTING & COMBINATORICS BASIC
-
-**Maqsad:** sanashni tushunish
-
-**Mavzular:**
-
-* Counting principles
-* Necha xil yo‘l
-* Permutation vs Combination (formula emas, g‘oya)
-
-**DSA bog‘lanishi:**
-
-* Subset masalalar
-* Backtracking tushunchasi
+📌 **Bu bosqichsiz DSA bo‘lmaydi**
 
 ---
 
-## 🔹 41–50 KUN — LOGARIFM & BINARY THINKING
+## 🟢 2-HAFTA: TO‘PLAMLAR (SET THEORY)
 
-**Maqsad:** `log n` ni his qilish
+👉 DSA’dagi **array, map, unique elementlar** fikrlashi
 
-**Mavzular:**
+**O‘rganasan:**
 
-* Logarifm nima (intuitiv)
-* Binary search ishlashi
-* Binary representation
+* to‘plam nima?
+* union (birlashtirish)
+* intersection (kesish)
+* difference (farq)
 
-**DSA bog‘lanishi:**
+**Mashq:**
 
-* Divide & conquer
-* Tree depth
+* faqat chizish (doira bilan)
+* elementlar qayerga kiradi, qayerga kirmaydi
 
-📌 Bit manipulation boshlanishi
+📌 **Bu “Group Anagrams”, “Intersection” fikrlashining matematik asosi**
 
 ---
 
-## 🔹 51–62 KUN — CONSOLIDATION (MUSTAHKAMLASH)
+## 🟢 3-HAFTA: SANASH (COMBINATORICS – ENG MUHIM)
 
-**Maqsad:** bilimni “avtomatik” qilish
+👉 DSA’dagi **nechta variant bor?** savoli
+
+**O‘rganasan:**
+
+* sanash nima?
+* tartib muhim / muhim emas degani nima
+* “nechta yo‘l bilan bo‘ladi?”
+
+❌ formulani yodlash yo‘q
+✅ faqat **fikrlab sanash**
+
+📌 **DP, recursion, backtracking’ning ildizi shu**
+
+---
+
+## 🟢 4-HAFTA: EHTIMOL (PROBABILITY – SODDA)
+
+👉 DSA’da **average / worst case** tushunish uchun
+
+**O‘rganasan:**
+
+* ehtimol nima?
+* bo‘lish emas, **nisbat**
+* qaysi holat tez-tez bo‘ladi
+
+**Mashq:**
+
+* coin / dice misollar
+* “qaysi holat ko‘proq chiqadi?” deb fikrlash
+
+---
+
+# 📅 2-OY — STRUKTURA & TIZIMLI FIKRLASH
+
+## 🟢 5-HAFTA: FUNKSIYA & MUNOSABAT
+
+👉 DSA’dagi **mapping, dependency** tushunchasi
+
+**O‘rganasan:**
+
+* input → output
+* bitta narsa nimaga bog‘liq?
+* relationship degani nima
+
+📌 **Graph va tree’ga tayyorlaydi**
+
+---
+
+## 🟢 6-HAFTA: BOOLEAN ALGEBRA (LOGIC CHUQURLASHADI)
+
+👉 DSA’dagi **conditionlarni tushunish**
+
+**O‘rganasan:**
+
+* AND / OR kombinatsiyasi
+* qaysi shart qachon true bo‘ladi
+* soddalashtirish
+
+❌ bitwise yo‘q
+❌ kod yo‘q
+
+---
+
+## 🟢 7-HAFTA: GRAPH TUSHUNCHASI (FAFAQAT MATEMATIK)
+
+👉 DSA’dagi **tree, DFS, BFS** uchun tayyorgarlik
+
+**O‘rganasan:**
+
+* node, edge
+* bog‘lanish
+* yo‘l bor / yo‘l yo‘q
+
+**Mashq:**
+
+* faqat chizish
+* qaysi joydan qayerga o‘tsa bo‘ladi
+
+---
+
+## 🟢 8-HAFTA: HAMMASINI BOG‘LASH
+
+👉 DSA boshlashdan oldingi **mental final**
 
 **Qilasan:**
 
-* Oldingi barcha mavzularni takrorlash
-* Har kuni 5–7 ta DSA masala
-* Har masalada:
-
-  * qaysi matematika ishladi
-  * Big O aytib berish
-
-📌 80% vaqt — masala
+* mantiq + set + sanash + ehtimolni aralashtirib misol
+* “qanday fikrlash kerak?”ni mustahkamlash
 
 ---
 
-## ⏱ KUNLIK FORMAT (MUHIM):
+# 🧠 2 OY OXIRIDA SEN QAYERDA BO‘LASAN?
 
-* 30 min — math tushuncha
-* 60 min — DSA masala
-* 30 min — tahlil / yozib tushuntirish
+✅ DSA boshlashga TAYYOR
+✅ LeetCode ko‘rsang qo‘rqmaysan
+✅ “bu qayerdan chiqdi?” demaysan
+✅ Kursni tushunib o‘zlashtira olasan
 
----
-
-## ❌ QATTIQ TAQIQLANADI:
-
-* Geometriya
-* Isbotlar
-* Trigonometriya
-* Olimpiada masalalari
-
----
-
-## 🎯 62 KUNDAN KEYIN:
-
-* DSA uchun matematika **yetarli**
-* LeetCode Easy–Mediumga tayyor
-* Iyun–Iyul DSA bosqichi **osonlashadi**
-
----
 
 
