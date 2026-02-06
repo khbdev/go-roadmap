@@ -1,88 +1,77 @@
-# 🔥 1 OYLIK TECHNICAL INTERVIEW ROADMAP (GO BACKEND)
-
-## 🎯 MAQSAD
-
-* Savolni eshitsang → **nimani so‘rayotganini tushunish**
-* Javobni aytsang → **real sistemadek tushuntirish**
-* “ishlatganman” emas → **nima uchun shunday ishlaydi**
 
 ---
 
-## 🧠 1-HAFTA — ASOS (OS + INTERNET + WEB)
+# 🔥 31 KUNLIK GO BACKEND INTERVIEW ROADMAP
+---
+
+## 🧠 1–7 KUN — OS + NETWORK + WEB (FOUNDATION)
 
 ### **1-kun — OS fundamentals**
 
-Intervyuda shundan boshlanadi:
-
-**Savollar:**
-
-* OS nima qiladi?
+* OS nima qiladi
 * Process vs Thread
 * Context switching
-* CPU bound vs IO bound
-* Memory: stack vs heap
-* Virtual memory nima?
-* Linux’da process lifecycle
+* Stack vs Heap
+* Virtual memory
+* Linux folder structure (`/etc /var /bin`)
+* PATH, GOROOT
 
-👉 Amaliy:
+👉 Ayta olishing kerak:
 
-* `ps`, `top`, `htop`
-* `/proc` nima?
-* OOM killer nima?
+> “Process qanday tug‘iladi va o‘ladi?”
 
 ---
 
-### **2-kun — Networking basics**
+### **2-kun — Linux terminal**
 
-**Savollar:**
+* `ps`, `kill`
+* `top`, `htop`
+* `df`, `ls`, `cd`
+* `cp`, `scp`
+* `tcpdump`, `nmap`
 
-* Internet nima?
-* Client–Server modeli
-* OSI 7 layer (real misol bilan)
+👉 Amaliy:
+
+* CPU yeyayotgan processni topib o‘ldir
+
+---
+
+### **3-kun — Networking core**
+
+* Client–Server
+* OSI 7 layer (real misol)
 * TCP vs UDP
 * 3-way handshake
-* DNS qanday ishlaydi?
-* HTTP ustida TCP qanday ishlaydi?
+* DNS
 
-👉 Ayta olish kerak:
+👉 Savol:
 
 > “Browser URL kiritsa nima bo‘ladi?”
 
 ---
 
-### **3-kun — HTTP & Web**
+### **4-kun — HTTP / HTTPS**
 
-**Savollar:**
-
-* HTTP nima?
-* REST nima?
 * HTTP methods
-* Status codes (2xx / 4xx / 5xx)
+* Status codes
 * Headers vs Body
+* HTTPS nima beradi
 * Keep-alive
-* HTTP/1.1 vs HTTP/2
 
 ---
 
-### **4-kun — Web servers**
+### **5-kun — Web servers**
 
-**Savollar:**
-
-* Nginx nima?
-* Reverse proxy nima?
-* Load balancer nima?
-* Web server vs App server
-* Static vs Dynamic content
+* Nginx
+* Reverse proxy
+* Load balancer
+* Static vs Dynamic
 
 ---
 
-### **5-kun — API**
+### **6-kun — API basics**
 
-**Savollar:**
-
-* API nima?
-* RESTful API prinsiplari
-* Versioning
+* REST
 * Pagination
 * Filtering
 * Rate limiting
@@ -90,178 +79,137 @@ Intervyuda shundan boshlanadi:
 
 ---
 
-### **6-kun — Git**
-
-**Savollar:**
-
-* Git qanday ishlaydi ichidan?
-* commit, branch, HEAD nima?
-* merge vs rebase
-* conflict nima?
-* Git flow
-* PR nima?
-
----
-
 ### **7-kun — REVIEW**
 
-👉 O‘zingga savol ber:
-
-> “Men buni production’da ishlatgan odamdek tushuntira olyapmanmi?”
+* O‘zingga savol berib gapir
+* 30 daqiqa **ovoz bilan tushuntir**
 
 ---
 
-## ⚙️ 2-HAFTA — GO + DATABASE + FILES
+## ⚙️ 8–14 KUN — GO + DATABASE (ENG MUHIM BLOK 🔥)
 
 ### **8-kun — Go fundamentals**
 
-**Savollar:**
-
-* Go nima uchun tez?
-* Goroutine nima?
-* Channel nima?
-* GOMAXPROCS
+* Goroutine
+* Channel
+* Mutex
 * Race condition
-* Mutex qachon kerak?
+* GOMAXPROCS
 
 ---
 
 ### **9-kun — Go memory & concurrency**
 
-**Savollar:**
-
-* Stack vs heap Go’da
+* Stack vs Heap
 * Escape analysis
 * Garbage Collector
-* Deadlock misoli
-* Context nima uchun kerak?
+* Deadlock
+* Context
+
+👉 Savol:
+
+> Context DB query’da nega kerak?
 
 ---
 
-### **10-kun — Database basics**
+### **10-kun — database/sql**
 
-**Savollar:**
+* `sql.DB` — connection pool
+* `sql.Open()` nima qiladi
+* Pool size
+* Connection leak
 
-* SQL vs NoSQL
+---
+
+### **11-kun — SQL CORE**
+
 * ACID
 * Transaction
-* Index nima?
-* Primary key vs Unique key
+* BEGIN / COMMIT / ROLLBACK
+* Isolation levels
+* Dirty / Phantom read
 
 ---
 
-### **11-kun — Database scaling**
+### **12-kun — SQL PERFORMANCE**
 
-**Savollar:**
-
-* Read replica
-* Master–Slave
-* Sharding
-* Connection pool
+* Index nima
+* B-tree
+* Composite index
+* `EXPLAIN ANALYZE`
 * N+1 problem
 
 ---
 
-### **12-kun — File storage**
+### **13-kun — SQL DESIGN**
 
-**Savollar:**
-
-* File system nima?
-* Local vs Object storage
-* S3 nima?
-* Upload large file qanday qilinadi?
-* Streaming vs buffer
+* Normalization (1–3NF, BCNF)
+* PK vs FK
+* JOIN turlari
+* Constraintlar
 
 ---
 
-### **13-kun — Caching**
-
-**Savollar:**
-
-* Cache nima uchun kerak?
-* Redis qachon ishlatiladi?
-* Cache invalidation
-* TTL
-* Write-through vs write-back
-
----
-
-### **14-kun — REVIEW + MOCK INTERVIEW**
+### **14-kun — MINI MOCK**
 
 👉 Savol:
 
-> “Database down bo‘lsa nima qilasan?”
+> “User + Order API dizayn qil (DB bilan)”
 
 ---
 
-## 🔐 3-HAFTA — AUTH, SECURITY, TESTING
+## 🔐 15–21 KUN — SECURITY + CACHE + MESSAGING
 
 ### **15-kun — Auth**
 
-**Savollar:**
-
-* Authentication vs Authorization
-* Session vs Token
-* JWT nima?
+* Auth vs AuthZ
+* Session vs JWT
 * Refresh token
-* OAuth tushunchasi
 
 ---
 
 ### **16-kun — Security**
 
-**Savollar:**
-
 * SQL Injection
 * XSS
 * CSRF
 * Hashing vs Encryption
-* HTTPS nima beradi?
+* HTTPS
 
 ---
 
-### **17-kun — Testing**
+### **17-kun — Cache**
 
-**Savollar:**
-
-* Unit test nima?
-* Integration test
-* Mock vs Stub
-* Test pyramid
-* Go test tools
+* Cache-aside
+* TTL
+* Invalidation
+* Redis qachon kerak
 
 ---
 
-### **18-kun — Highload**
+### **18-kun — Message Brokers**
 
-**Savollar:**
-
-* Highload nima?
-* Bottleneck qayerda bo‘ladi?
-* K6 nima?
-* Qanday qilib systemni test qilasan?
-
----
-
-### **19-kun — Message brokers**
-
-**Savollar:**
-
-* Kafka vs RabbitMQ
-* Queue nima?
+* RabbitMQ
+* Kafka
 * Producer / Consumer
-* Async processing qachon kerak?
+* Async processing
+
+---
+
+### **19-kun — Highload**
+
+* Bottleneck
+* DB lock
+* Connection pool limit
+* Slow query
 
 ---
 
 ### **20-kun — Monitoring**
 
-**Savollar:**
-
-* Monitoring nima?
 * Metrics vs Logs
-* Prometheus nima?
-* Alert qachon qo‘yiladi?
+* Prometheus
+* Alert
 
 ---
 
@@ -273,86 +221,86 @@ Intervyuda shundan boshlanadi:
 
 ---
 
-## 🏗 4-HAFTA — ARCHITECTURE + DEVOPS
+## 🏗 22–28 KUN — ARCHITECTURE + DEVOPS
 
-### **22-kun — Architecture patterns**
-
-**Savollar:**
+### **22-kun — Architecture**
 
 * Monolith vs Microservice
+* Event-driven
 * Clean Architecture
-* MVC
-* Layered architecture
 
 ---
 
-### **23-kun — Containers**
+### **23-kun — Docker**
 
-**Savollar:**
-
-* Docker nima?
 * Image vs Container
-* Volume
-* Dockerfile nima?
-* Container vs VM
+* Dockerfile
+* Docker Compose
 
 ---
 
-### **24-kun — CI/CD**
+### **24-kun — Cloud**
 
-**Savollar:**
-
-* CI nima?
-* CD nima?
-* Pipeline nima qiladi?
-* Test qayerda ishlaydi?
-* Deploy strategiyalar
+* AWS / GCP / DO
+* VM vs Container
+* Scaling
 
 ---
 
-### **25-kun — Log management & tracing**
+### **25-kun — File Storage**
 
-**Savollar:**
-
-* Centralized logging
-* Correlation ID
-* Distributed tracing nima?
-
----
-
-### **26-kun — SDLC**
-
-**Savollar:**
-
-* SDLC bosqichlari
-* Agile vs Waterfall
-* Code review nima uchun kerak?
+* Local vs Object
+* S3 / MinIO
+* Large file upload
+* CDN
 
 ---
 
-### **27-kun — SYSTEM DESIGN MINI**
+### **26-kun — System Design**
 
-👉 Savol:
-
-> “Login + Todolist API dizayn qil”
-
----
-
-### **28-kun — FINAL MOCK INTERVIEW**
-
-* O‘zing gapir
-* O‘zingni to‘xtatma
-* Ovozing bilan tushuntir
+* 12-factor app
+* Stateless vs Stateful
+* Unique ID generation
 
 ---
 
-## 🔑 INTERVYU FORMULA (ESLAB QOL)
+### **27-kun — Design Patterns**
 
-Har savolda shu 3 bosqich:
+* Factory
+* Builder
+* Singleton
+* Qachon ishlatiladi
 
-1️⃣ **Definition**
-2️⃣ **Why** (nega kerak)
-3️⃣ **Real example**
+---
+
+### **28-kun — Testing**
+
+* Unit
+* Integration
+* Load (k6)
+* Stress
+
+---
+
+## 🎤 29–31 KUN — FINAL INTERVIEW MODE
+
+### **29-kun — MOCK INTERVIEW**
+
+* OS + Network + DB
+
+---
+
+### **30-kun — MOCK INTERVIEW**
+
+* Go + SQL + Architecture
+
+---
+
+### **31-kun — FINAL**
+
+* Ovoz bilan tushuntir
+* To‘xtamasdan gapir
+* Definition → Why → Example
 
 ---
 
