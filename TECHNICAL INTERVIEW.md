@@ -1,110 +1,87 @@
 
+
+# 🔥 REAL 30 KUNLIK GO BACKEND INTERVIEW ROADMAP
+
 ---
 
-# 🔥 31 KUNLIK GO BACKEND INTERVIEW ROADMAP
----
+# 🧠 1–5 KUN — OS + NETWORK (REAL FOUNDATION)
 
-## 🧠 1–7 KUN — OS + NETWORK + WEB (FOUNDATION)
+### ✅ 1-kun — Process & Memory
 
-### **1-kun — OS fundamentals**
-
-* OS nima qiladi
 * Process vs Thread
-* Context switching
 * Stack vs Heap
+* Context switching
 * Virtual memory
-* Linux folder structure (`/etc /var /bin`)
-* PATH, GOROOT
+* Garbage collection nima
 
 👉 Ayta olishing kerak:
 
-> “Process qanday tug‘iladi va o‘ladi?”
+> Process qanday yaratiladi? Fork nima?
 
 ---
 
-### **2-kun — Linux terminal**
+### ✅ 2-kun — Linux Practical
 
-* `ps`, `kill`
-* `top`, `htop`
-* `df`, `ls`, `cd`
-* `cp`, `scp`
-* `tcpdump`, `nmap`
+* `ps`, `top`, `kill`
+* `htop`
+* `df -h`
+* `netstat` / `ss`
+* `lsof`
 
 👉 Amaliy:
-
-* CPU yeyayotgan processni topib o‘ldir
+CPU yeyayotgan processni top
 
 ---
 
-### **3-kun — Networking core**
+### ✅ 3-kun — Networking Core
 
-* Client–Server
-* OSI 7 layer (real misol)
 * TCP vs UDP
 * 3-way handshake
-* DNS
+* Connection close
+* TIME_WAIT nima
+* DNS resolution
 
 👉 Savol:
 
-> “Browser URL kiritsa nima bo‘ladi?”
+> Browser URL kiritsa nima bo‘ladi?
 
 ---
 
-### **4-kun — HTTP / HTTPS**
+### ✅ 4-kun — HTTP Real
 
 * HTTP methods
 * Status codes
-* Headers vs Body
-* HTTPS nima beradi
+* Headers
 * Keep-alive
+* HTTPS handshake
 
 ---
 
-### **5-kun — Web servers**
+### ✅ 5-kun — Review + Mini Mock
 
-* Nginx
-* Reverse proxy
-* Load balancer
-* Static vs Dynamic
+30 min ovoz bilan tushuntir.
 
 ---
 
-### **6-kun — API basics**
-
-* REST
-* Pagination
-* Filtering
-* Rate limiting
-* Idempotency
+# ⚙️ 6–14 KUN — GO + DATABASE (ENG MUHIM BLOK 🔥🔥🔥)
 
 ---
 
-### **7-kun — REVIEW**
+## ✅ 6-kun — Goroutines & Channels
 
-* O‘zingga savol berib gapir
-* 30 daqiqa **ovoz bilan tushuntir**
-
----
-
-## ⚙️ 8–14 KUN — GO + DATABASE (ENG MUHIM BLOK 🔥)
-
-### **8-kun — Go fundamentals**
-
-* Goroutine
-* Channel
-* Mutex
+* Scheduler qanday ishlaydi
+* Buffered vs unbuffered
+* Deadlock nima
 * Race condition
-* GOMAXPROCS
 
 ---
 
-### **9-kun — Go memory & concurrency**
+## ✅ 7-kun — Mutex & Context
 
-* Stack vs Heap
-* Escape analysis
-* Garbage Collector
-* Deadlock
-* Context
+* sync.Mutex
+* RWMutex
+* Context cancellation
+* Context timeout
 
 👉 Savol:
 
@@ -112,195 +89,185 @@
 
 ---
 
-### **10-kun — database/sql**
+## ✅ 8-kun — Go Memory
 
-* `sql.DB` — connection pool
+* Escape analysis
+* Stack → Heap o‘tishi
+* GC qachon ishlaydi
+
+---
+
+## ✅ 9-kun — database/sql
+
+* `sql.DB` pool
 * `sql.Open()` nima qiladi
-* Pool size
+* MaxOpenConns
 * Connection leak
 
 ---
 
-### **11-kun — SQL CORE**
+## ✅ 10-kun — SQL CORE
 
 * ACID
 * Transaction
-* BEGIN / COMMIT / ROLLBACK
 * Isolation levels
-* Dirty / Phantom read
+* Dirty read
 
 ---
 
-### **12-kun — SQL PERFORMANCE**
+## ✅ 11-kun — SQL PERFORMANCE
 
-* Index nima
+* Index
 * B-tree
 * Composite index
-* `EXPLAIN ANALYZE`
 * N+1 problem
+* `EXPLAIN`
 
 ---
 
-### **13-kun — SQL DESIGN**
+## ✅ 12-kun — Query Debug Thinking
 
-* Normalization (1–3NF, BCNF)
-* PK vs FK
-* JOIN turlari
-* Constraintlar
+Savol:
 
----
-
-### **14-kun — MINI MOCK**
-
-👉 Savol:
-
-> “User + Order API dizayn qil (DB bilan)”
+> API sekin ishlayapti — qayerdan boshlaysan?
 
 ---
 
-## 🔐 15–21 KUN — SECURITY + CACHE + MESSAGING
+## ✅ 13-kun — Mini Design
 
-### **15-kun — Auth**
+User + Order API dizayn qil:
 
-* Auth vs AuthZ
-* Session vs JWT
+* DB schema
+* Index
+* Endpoint
+
+---
+
+## ✅ 14-kun — MOCK (Go + SQL)
+
+---
+
+# 🔐 15–20 KUN — SECURITY + CACHE + REAL BACKEND
+
+---
+
+## ✅ 15-kun — Auth
+
+* JWT
 * Refresh token
+* Expiration
+* Access vs Refresh
 
 ---
 
-### **16-kun — Security**
+## ✅ 16-kun — Security
 
 * SQL Injection
 * XSS
 * CSRF
-* Hashing vs Encryption
-* HTTPS
+* Hashing (bcrypt)
 
 ---
 
-### **17-kun — Cache**
+## ✅ 17-kun — Redis
 
 * Cache-aside
 * TTL
 * Invalidation
-* Redis qachon kerak
+* Qachon cache kerak emas
 
 ---
 
-### **18-kun — Message Brokers**
+## ✅ 18-kun — Message Broker (overview)
 
-* RabbitMQ
-* Kafka
-* Producer / Consumer
-* Async processing
+* RabbitMQ nima
+* Kafka nima
+* Async job
+
+Chuqur emas — overview yetadi.
 
 ---
 
-### **19-kun — Highload**
+## ✅ 19-kun — Highload thinking
 
-* Bottleneck
-* DB lock
-* Connection pool limit
+* DB bottleneck
 * Slow query
+* Pool limit
+* Goroutine leak
 
 ---
 
-### **20-kun — Monitoring**
+## ✅ 20-kun — Debug Scenario
 
-* Metrics vs Logs
-* Prometheus
-* Alert
+Savol:
 
----
-
-### **21-kun — REVIEW**
-
-👉 Savol:
-
-> “Server sekinlashdi — qayerdan boshlaysan?”
+> Production’da CPU 100% bo‘ldi — nima qilasan?
 
 ---
 
-## 🏗 22–28 KUN — ARCHITECTURE + DEVOPS
-
-### **22-kun — Architecture**
-
-* Monolith vs Microservice
-* Event-driven
-* Clean Architecture
+# 🏗 21–26 KUN — ARCHITECTURE REAL
 
 ---
 
-### **23-kun — Docker**
+## ✅ 21-kun — Monolith vs Microservice
 
-* Image vs Container
+Tradeoff gapira olishing kerak.
+
+---
+
+## ✅ 22-kun — Clean Architecture
+
+* Layer
+* Dependency rule
+* Nega kerak
+
+---
+
+## ✅ 23-kun — Docker
+
 * Dockerfile
-* Docker Compose
+* Container vs VM
 
 ---
 
-### **24-kun — Cloud**
+## ✅ 24-kun — Scaling
 
-* AWS / GCP / DO
-* VM vs Container
-* Scaling
-
----
-
-### **25-kun — File Storage**
-
-* Local vs Object
-* S3 / MinIO
-* Large file upload
-* CDN
+* Vertical vs Horizontal
+* Load balancer nima
 
 ---
 
-### **26-kun — System Design**
+## ✅ 25-kun — File storage
 
-* 12-factor app
-* Stateless vs Stateful
-* Unique ID generation
-
----
-
-### **27-kun — Design Patterns**
-
-* Factory
-* Builder
-* Singleton
-* Qachon ishlatiladi
+* Local vs S3
+* Large upload
 
 ---
 
-### **28-kun — Testing**
+## ✅ 26-kun — System mini
 
-* Unit
-* Integration
-* Load (k6)
-* Stress
+Design:
 
----
+> URL shortener (oddiy)
 
-## 🎤 29–31 KUN — FINAL INTERVIEW MODE
-
-### **29-kun — MOCK INTERVIEW**
-
-* OS + Network + DB
+Chuqur emas, basic.
 
 ---
 
-### **30-kun — MOCK INTERVIEW**
-
-* Go + SQL + Architecture
+# 🎤 27–30 KUN — MOCK MODE
 
 ---
 
-### **31-kun — FINAL**
+## 27-kun — OS + Network mock
 
-* Ovoz bilan tushuntir
-* To‘xtamasdan gapir
-* Definition → Why → Example
+## 28-kun — Go + SQL mock
+
+## 29-kun — Architecture mock
+
+## 30-kun — Full simulation
+
+Definition → Why → Example formatda gapir.
 
 ---
+
 
